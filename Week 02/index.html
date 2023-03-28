@@ -14,10 +14,18 @@
             </a>
             <ul>
                 <li>
-                    <button>Log in <img src="../Assets/images/login-icon.png" alt="Log In"></button>
+                    <a href="#">
+                        <button>Log in 
+                            <img src="../Assets/images/login-icon.png" alt="Log In">
+                        </button>
+                    </a>
                 </li>
                 <li>
-                    <button>Sign Up <img src="../Assets/images/signup-icon.png"></button>
+                    <a href="#">
+                        <button>Sign Up
+                            <img src="../Assets/images/signup-icon.png">
+                        </button>
+                    </a>
                 </li>
             </ul>
         </header>
@@ -35,7 +43,8 @@
                 <p>Av. Pellegrini 3245</p>
             </a>
             <a href="tel=+543416544948">
-                <img src="../Assets/images/phone icon.png" alt="124645">354654165
+                <img src="../Assets/images/phone icon.png" alt="124645">
+                <p>3416548943</p>
             </a>
         </aside>
         <main>
@@ -46,108 +55,118 @@
                 In this app you can choose our best personal trainers and the best classes,
                 and have a bunch of privileges with our differents memberships
             </p>
-            <h2>Features</h2>
-            <article>
-                <img src="../Assets/images/reservations.png" alt="">
-                <h3>Reservations</h3>
-                <p>Choose your favorite class and ensure your place</p>
-            </article>
-            <article>
-                <img src="../Assets/images/schedule.png" alt="A picture of the gym">
-                <h3>Schedule</h3>
-                <p>Monday to saturday 8am till 8pm</p>
-            </article>
-            <article>
-                <img src="../Assets/images/membership.png" alt="People working out">
-                <h3>Memberships</h3>
-                <p>Pick wich one is best for you</p>
-            </article>
-            <article>
-                <img src="../Assets/images/reservations.png" alt="">
-                <h3>Reservations</h3>
-                <p>Your opinion is important to us, it helps us improve</p>
-            </article>
-            <h2>Contact us</h2>
-            <form action="#">
-                <ul>
-                    <li>
-                        <label for="name">Name:</label>
-                        <input type="text" value="Name">    
-                    </li> 
-                    <li>
-                        <label for="Surname">Surname:</label>
-                        <input type="text" value="Surname">    
-                    </li>
-                    <li>
-                        <label for="Surname">Email:</label>
-                        <input type="email" value="message@mail.com"> 
-                    </li>
-                    <li>
-                    <label for="Contact Reason">Contact Reason</label>
-                        <select name="Contact Reason">
-                            <option value="information">Information</option>
-                            <option value="Questions">Questions</option>
-                            <option value="business">Business</option>       
-                        </select>
-                    </li>
-                    <li>
-                        <label for="message"></label>
-                        <input type="text" value="Message">
-                    </li>
-                    <li>
-                        <input type="submit" value="Submit">
-                    </li>
-                </ul>                
-            </form>
-            <h2>Activities</h2>
-            <article>
-                <img src="../Assets/images/crossfit.png" alt="people working out">
-                <h3>Crossfit</h3>
-            </article>
-            <article>
-                <img src="../Assets/images/BOX.png" alt="a woman boxing">
-                <h3>BOX</h3>
-            </article>
-            <article>
-                <img src="../Assets/images/functional.png" alt="people doing functional activities">
-                <h3>Functional</h3>
-            </article>
-            <article>
-                <img src="../Assets/images/SPINNING.png" alt="people doing spinning">
-                <h3>Spinning</h3>
-            </article>
-            <article>
-                <img src="../Assets/images/fitness.png" alt="people running">
-                <h3>Fitness</h3>
-            </article>
-            <h2>Memberships</h2>
-            <article class="memberships" id="only-classes">
-                <img src="../Assets/images/only-classes.png" alt="">
-                <h3>Only Classes membership</h3>
-                <p>Free accces to classes with registration</p>
-                <p>Schedule View</p>
-            </article>
-            <article class="memberships" id="classic-membership">
-                <img src="../Assets/images/Classic Membership.png" alt="">
-                <h3>Classic Membership</h3>
-                <p>Free acces to the Gym Personalized monitoring & coaching</p>
-                <p>Schedule View</p>
-            </article>
-            <article class="memberships" id="black-membership">
-                <img src="../Assets/images/black membership.png" alt="">
-                <h3>Black Membership</h3>
-                <p>Free Acces to the Gym.
-                Free Acces to the classes with registration.
-                Personalized monitoring & coaching
+            <section id="section-features">
+                <h2>Features</h2>
+                <article>
+                    <img src="../Assets/images/reservations.png" alt="">
+                    <h3>Reservations</h3>
+                    <p>Choose your favorite class and ensure your place</p>
+                </article>
+                <article>
+                    <img src="../Assets/images/schedule.png" alt="A picture of the gym">
+                    <h3>Schedule</h3>
+                    <p>Monday to saturday 8am till 8pm</p>
+                </article>
+                <article>
+                    <img src="../Assets/images/membership.png" alt="People working out">
+                    <h3>Memberships</h3>
+                    <p>Pick wich one is best for you</p>
+                </article>
+                <article>
+                    <img src="../Assets/images/reservations.png" alt="">
+                    <h3>Reservations</h3>
+                    <p>Your opinion is important to us, it helps us improve</p>
+                </article>
+            </section>
+            <section>
+                <h2>Contact us</h2>
+                <form action="#">
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" value="Name">    
+                        </li> 
+                        <li>
+                            <label for="Surname">Surname:</label>
+                            <input type="text" value="Surname">    
+                        </li>
+                        <li>
+                            <label for="Surname">Email:</label>
+                            <input type="email" value="message@mail.com"> 
+                        </li>
+                        <li>
+                        <label for="Contact Reason">Contact Reason</label>
+                            <select name="Contact Reason">
+                                <option value="information">Information</option>
+                                <option value="Questions">Questions</option>
+                                <option value="business">Business</option>       
+                            </select>
+                        </li>
+                        <li>
+                            <label for="message"></label>
+                            <input type="text" value="Message">
+                        </li>
+                        <li>
+                            <input type="submit" value="Submit">
+                        </li>
+                    </ul>                
+                </form>
+            </section>
+            <section id="section-activities">
+                <h2>Activities</h2>
+                <article>
+                    <img src="../Assets/images/crossfit.png" alt="people working out">
+                    <h3>Crossfit</h3>
+                </article>
+                <article>
+                    <img src="../Assets/images/BOX.png" alt="a woman boxing">
+                    <h3>BOX</h3>
+                </article>
+                <article>
+                    <img src="../Assets/images/functional.png" alt="people doing functional activities">
+                    <h3>Functional</h3>
+                </article>
+                <article>
+                    <img src="../Assets/images/SPINNING.png" alt="people doing spinning">
+                    <h3>Spinning</h3>
+                </article>
+                <article>
+                    <img src="../Assets/images/fitness.png" alt="people running">
+                    <h3>Fitness</h3>
+                </article>
+            </section>
+            <section id="section-memberships">
+                <h2>Memberships</h2>
+                <article class="memberships" id="only-classes">
+                    <img src="../Assets/images/only-classes.png" alt="">
+                    <h3>Only Classes membership</h3>
+                    <p>Free accces to classes with registration</p>
+                    <p>Schedule View</p>
+                </article>
+                <article class="memberships" id="classic-membership">
+                    <img src="../Assets/images/Classic Membership.png" alt="">
+                    <h3>Classic Membership</h3>
+                    <p>Free acces to the Gym Personalized monitoring & coaching</p>
+                    <p>Schedule View</p>
+                </article>
+                <article class="memberships" id="black-membership">
+                    <img src="../Assets/images/black membership.png" alt="">
+                    <h3>Black Membership</h3>
+                    <p>Free Acces to the Gym.
+                    Free Acces to the classes with registration.
+                    Personalized monitoring & coaching
+                    </p>
+                    <p>Schedule View</p>
+                </article>
+            </section>
+            <section id="Section-our-story">
+                <h2>Our Story</h2>
+                <p>We are one of the oldest but most modern gyms. 
+                    50 trainers work in MR GYM and more than 200 people come to our place everyday.
+                    We are dedicated to helping you improve
+                    your quality of life in a fun and active way
                 </p>
-                <p>Schedule View</p>
-            </article>
-            <h2>Our Story</h2>
-            <p>We are one of the oldest but most modern gyms. 
-                50 trainers work in MR GYM and more than 200 people come to our place everyday.
-                We are dedicated to helping you improve
-                your quality of life in a fun and active way
-            </p>
+            </section>
         </main>
         <footer>
             <img src="../Assets/images/instagram-logo.png" alt="Instagram Logo">
