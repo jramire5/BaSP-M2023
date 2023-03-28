@@ -15,7 +15,7 @@ This week i did a model of the landing page using just HTML.
 
 ## How to use it
 
-Just download the HTML, it will work
+Just download the HTML and open it in your browser
 
 
 ## Author
