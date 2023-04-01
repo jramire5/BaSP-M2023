@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">  
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MEGA ROCKET S.A</title>
     </head>
     <body>
-        <header>
-            <a href="#">
+        <header class="header">
+            <a href="#" class="logo">
                 <img src="../Assets/images/radiumrocketlogo.png" alt="Mega Rocket Logo">
-                <h2>Mega Rocket S.A</h2>    
+                <h1>Mega Rocket S.A</h1>    
             </a>
-            <ul>
-                <li>
-                    <a href="#">
-                        <button>Log in 
-                            <img src="../Assets/images/login-icon.png" alt="Log In">
-                        </button>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <button>Sign Up
-                            <img src="../Assets/images/signup-icon.png">
-                        </button>
-                    </a>
-                </li>
-            </ul>
+            <div class="login-signup">
+                <a href="#" id="login">
+                    <button>Log in 
+                        <img src="../Assets/images/login-icon.png" alt="Log In">
+                    </button>
+                </a>
+                <a href="#">
+                    <button>Sign Up
+                        <img src="../Assets/images/signup-icon.png">
+                    </button>
+                </a>
+            </div>
         </header>
         <aside>
             <ul>
@@ -38,49 +36,51 @@
                 <li><a href="#">Memberships</a></li>
                 <li><a href="#">Our Story</a></li>
             </ul>
-            <a href="https://goo.gl/maps/bmLpHthUbXpR3h2NA">
-                <img src="../Assets/images/map icon.png" alt="map icon">
-                <p>Av. Pellegrini 3245</p>
-            </a>
-            <a href="tel=+543416544948">
-                <img src="../Assets/images/phone icon.png" alt="124645">
-                <p>3416548943</p>
-            </a>
+            <div>
+                <a href="https://goo.gl/maps/bmLpHthUbXpR3h2NA">
+                    <img src="../Assets/images/map icon.png" alt="map icon">
+                    <p>Av. Pellegrini 3245</p>
+                </a>
+                <a href="tel=+543416544948">
+                    <img src="../Assets/images/phone icon.png" alt="124645">
+                    <p>3416548943</p>
+                </a>
+            </div>
         </aside>
         <main>
-            <img src="../Assets/images/don't sit get fit.png" alt="Two people working out">
-            <h1>Don't Sit, get Fit</h1>
-            <p>
-                <p>Hola</p> Your best version is waiting for you, join Mega Rocket Gym Today.
-                In this app you can choose our best personal trainers and the best classes,
-                and have a bunch of privileges with our differents memberships
-            </p>
-            <section id="section-features">
-                <h2>Features</h2>
-                <article>
-                    <img src="../Assets/images/reservations.png" alt="">
-                    <h3>Reservations</h3>
-                    <p>Choose your favorite class and ensure your place</p>
-                </article>
-                <article>
-                    <img src="../Assets/images/schedule.png" alt="A picture of the gym">
-                    <h3>Schedule</h3>
-                    <p>Monday to saturday 8am till 8pm</p>
-                </article>
-                <article>
-                    <img src="../Assets/images/membership.png" alt="People working out">
-                    <h3>Memberships</h3>
-                    <p>Pick wich one is best for you</p>
-                </article>
-                <article>
-                    <img src="../Assets/images/reservations.png" alt="">
-                    <h3>Reservations</h3>
-                    <p>Your opinion is important to us, it helps us improve</p>
-                </article>
+            <section id="main-section">
+                <h2 class="titles"">Don't Sit <span class="titles-effect">get Fit</span> </h2>
+                <p class="text" id="main-text">
+                    Your best version is waiting for you, join Mega Rocket Gym Today.
+                    In this app you can choose our best personal trainers and the best classes,
+                    and have a bunch of privileges with our differents memberships
+                </p>
             </section>
-            <section>
-                <h2>Contact us</h2>
-                <form action="#">
+
+            <section class='secondary-sections' id="section-features">
+                <h2 class="titles">FEATU<span class="titles-effect">RES</span></h2>
+                <div id="features">
+                    <article class="mini-card" id="reservations">
+                        <h3 class="secondary-titles">Reservations</h3>
+                        <p class="text">Choose your favorite class and ensure your place</p>
+                    </article>
+                    <article class="mini-card" id="schedule">
+                        <h3 class="secondary-titles">Schedule</h3>
+                        <p class="text">Monday to saturday 8am till 8pm</p>
+                    </article>
+                    <article class="mini-card" id="memberships">
+                        <h3 class="secondary-titles">Memberships</h3>
+                        <p class="text">Pick wich one is best for you</p>
+                    </article>
+                    <article class="mini-card" id="contact-and-suggestions">
+                        <h3 class="secondary-titles">Contact and suggestions</h3>
+                        <p class="text">Your opinion is important to us, it helps us improve</p>
+                    </article>
+                </div>
+            </section>
+            <section class="secondary-sections">
+                <h2 class="titles">CONTACT<span class="titles-effect">US</span></h2>
+                <form action="#" id="contact-form">
                     <ul>
                         <li>
                             <label for="name">Name:</label>
@@ -103,7 +103,7 @@
                             </select>
                         </li>
                         <li>
-                            <label for="message"></label>
+                            <label for="message">Message</label>
                             <input type="text" value="Message">
                         </li>
                         <li>
