@@ -19,44 +19,91 @@ body{
     background-color: #535353;
 
 }
+span{
+    display: block;
+}
 .header{
     display: block;
     margin: 0;
     background-color: #323232;
     width: 1512px;
+    height: 188px;
 }
 .logo{
     display: inline-block;
     margin: 20px;
+    height: 80%;
+}
+#logo-img{
+    display: block;
+    padding-top: 20px;
+    margin-left: 80px;
+    height: 50%;
+}
+#sitename{
+    font-weight: normal;
+    color: #E3EC39;
 }
 .login-signup{
     position: relative;
     display: inline-block;
-    top: -100px;
-    left: 866px;
+    vertical-align:  top;
+    margin-top: 50px;
+    left: 740px;
+}
+.login-signup-button{
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    width:158px;
+    height: 76px;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
 }
 #login{
     margin-right: 20px;
 }
+
 aside{
     position: absolute;
     left: 0;
     display:inline-block;
-    background-color: yellow; 
+    background-color: #E3EC39; 
     width: 336px;
-    height:5400px;
+    height:5629px
+}
+#side-sections{
+    margin-top: 30px;
+    padding-top: 40px;
 }
 .side-items{
     display: block;
     text-align: center;
-    font-size: 30pt;
+    font-size: 24pt;
     margin-top: 50px;
-    font-weight: bold;
+    font-weight: bolder;
     color: #000;
 }
 .side-contact{
-    position: relative;
+    display: block;
+    color: #000;
+    position: absolute;
+    bottom: 50px;
 }
+.side-contact-containers{
+    display: block;
+    margin-bottom: 20px;
+}
+.side-contact-items{
+    color: #000;
+    display: inline-block;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
 .card{
     display: inline-block;
     width: 300px;
@@ -70,18 +117,35 @@ main{
     background-image: url(../../Assets/images/don-t-sit-get-fit.png);
     background-color: #323232;
     opacity: 100%;
-    background-size: fit;
+    background-size:cover;
     width: 1178px;
     height: 864px;
 }
-#main-text{
+#main-title{
+    padding-top: 100px;
+}
+.text{
+    font-family: Roboto;
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-size: 20pt;
+    margin-left: 10px; 
+    margin-top: 50px;
+    text-align: center;
+}
+.main-text{
     position: relative;
-    top: 200px;
-    font-size: 30pt;
+    font-size: 24pt;
+    font-weight: normal;
     padding-left: 28px;
     padding-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
-
+.main-text p{
+    margin-top: 100px;
+}
 .secondary-sections{
     display: block;
     width: 1018.56px;
@@ -90,6 +154,7 @@ main{
 }
 .secondary-titles{
     position: relative;
+    padding-top: 20px;
     margin-top: 30px;
     font-size: 40pt;
     text-align: center;
@@ -153,6 +218,11 @@ vertical-align: bottom;
     font-size: 16pt;
     padding-bottom: 5px;
 }
+.contact-input{
+    padding-left: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
 #box-message{
     width: 1000px;
     display: block;
@@ -165,6 +235,7 @@ vertical-align: bottom;
 }
 #select-reason{
     background-color: #a8a8a82c;
+    border-color: #a8a8a82c;
     border-radius: 5px;
 }
 #box-submit{
@@ -181,6 +252,7 @@ vertical-align: bottom;
 }
 input{
     background-color: #a8a8a82c;
+    border-color: #a8a8a82c;
     border-radius: 5px;
 }
 .activities-container{
@@ -246,13 +318,13 @@ background-image: url(../../Assets/images/BOX.png);
     margin-right: 60px;
 }
 #only-classes{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
 }
 #classic{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
 }
 #black-membership{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
 }
 #Section-our-story{
     
@@ -285,6 +357,11 @@ background-image: url(../../Assets/images/BOX.png);
 #our-story-text{
     color: #000;
     font-size: 18pt;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .titles-effect{
     position: relative;
@@ -293,16 +370,6 @@ background-image: url(../../Assets/images/BOX.png);
     top: 100px;
     text-emphasis: none;
     color: yellow
-}
-.text{
-    font-family: Roboto;
-    font-weight: bold;
-    display: block;
-    color: white;
-    font-size: 20pt;
-    margin-left: 10px; 
-    margin-top: 50px;
-    text-align: center;
 }
 footer{
     display: block;
@@ -313,10 +380,21 @@ footer{
     background-color: #323232;
 }
 .footer-text{
+    display: inline;
     font-size: 24pt;
     color: white;
     text-decoration: underline;
     margin-left: 30px;
     margin-right: 70px;
     vertical-align:50%
+}
+.footer-social-media{
+    display: inline-block;
+    padding-top: 50px;
+}
+#copyright{
+    display: inline-block;
+    font-size: 14pt;
+    text-decoration: none;
+    text-align: center;
 }
