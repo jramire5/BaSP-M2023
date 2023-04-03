@@ -1,6 +1,17 @@
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+  }
+a{
+    text-decoration: none;
+}
 *{
     margin: 0;
     padding: 0;
+    font-family: Roboto;
 }
 
 body{
@@ -33,7 +44,18 @@ aside{
     display:inline-block;
     background-color: yellow; 
     width: 336px;
-    height:10000px;
+    height:5400px;
+}
+.side-items{
+    display: block;
+    text-align: center;
+    font-size: 30pt;
+    margin-top: 50px;
+    font-weight: bold;
+    color: #000;
+}
+.side-contact{
+    position: relative;
 }
 .card{
     display: inline-block;
@@ -45,7 +67,7 @@ main{
     margin-left: 335px;
 }
 #main-section{
-    background-image: url(../../Assets/images/don\'t-sit-get-fit.png);
+    background-image: url(../../Assets/images/don-t-sit-get-fit.png);
     background-color: #323232;
     opacity: 100%;
     background-size: fit;
@@ -55,68 +77,246 @@ main{
 #main-text{
     position: relative;
     top: 200px;
+    font-size: 30pt;
+    padding-left: 28px;
+    padding-right: 20px;
 }
 
 .secondary-sections{
     display: block;
     width: 1018.56px;
+    margin-left: 100px;
+    padding-left: 0px;
 }
 .secondary-titles{
     position: relative;
-    font-size: 60pt;
+    margin-top: 30px;
+    font-size: 40pt;
+    text-align: center;
     text-emphasis: none;
-    color: yellow   
+    color: #E3EC39   
+}
+.secondary-text{
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+}
+p{
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 .mini-card{
-width: 451.53px;
-height: 288.9px;
 position: relative;
 display: inline-block;
-margin-top:  60px;
-margin-left: 50px;
+width: 455px;
+height: 290px;
+margin-top: 10px;
+margin-bottom: 50px;
+margin-right: 50px;
+background-clip: border-box;
+border-radius: 10px;
+vertical-align: bottom;
 }
-#section-features{
-align-self: center;
-}
-#features{
-    align-content: center;
-    margin-top: 50px;
-}
+
 #reservations{
-    background-image: url(../../Assets/images/reservations.png);
-}
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");}
 #schedule{
-    background-image: url(../../Assets/images/reservations.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/reservations.png);
 }
 #memberships{
-    background-image: url(../../Assets/images/membership.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/membership.png);
 }
 #contact-and-suggestions{
-    background-image: url(../../Assets/images/contacts-and-suggestions.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/contacts-and-suggestions.png);
 }
 #contact-form{
-    
+    border: #323232;
+    width: 1030px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+.form{
+    padding-left: 100px;
+}
+.form-field{
+    display: inline-block;
+    align-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+.label{
+    display: block;
+    font-size: 16pt;
+    padding-bottom: 5px;
+}
+#box-message{
+    width: 1000px;
+    display: block;
+    align-self: center;
+}
+#input-message{
+    width: 756px;
+    height: 100px;
+    display: block;
+}
+#select-reason{
+    background-color: #a8a8a82c;
+    border-radius: 5px;
+}
+#box-submit{
+    margin-left: 330px;
+}
+#input-submit{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.list{
+    list-style:none
+}
+input{
+    background-color: #a8a8a82c;
+    border-radius: 5px;
+}
+.activities-container{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 306.15px;
+    height: 187px;
+}
+.activities-text{
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-size: 40pt;
+    margin-left: 10px; 
+    margin-top: 50px;
+    text-align: center;
+}
+.line{
+    display: block;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+#crossfit{
+    background-image: url(../../Assets/images/crossfit.png);
+    color: white;
+}
+#box{
+background-image: url(../../Assets/images/BOX.png);
+ display: inline-block;
+ width: 306.15px;
+ height: 187px;
+ color: white;
+}
+#functional{
+    background-image: url(../../Assets/images/functional.png);
+}
+#spining{
+    background-image: url(../../Assets/images/SPINNING.png);
+}
+#fitness{
+    background-image: url(../../Assets/images/fitness.png);
 }
 .titles{
-    font-family: roboto;
+    font-family: Roboto;
     text-emphasis: none;
     text-decoration: none;
-    border-bottom: 0;
     font-size: 100pt;
     text-align: center;
     color: white;
+    padding-bottom: 100px;
+
+}
+.memberships{
+    width: 480px;
+    height: 575.75px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.memberships-text{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#only-classes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
+}
+#classic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+}
+#black-membership{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+}
+#Section-our-story{
+    
+    display: inline-block;
+    margin-top: 80px;
+    margin-left: 20px;
+    margin-bottom: 80px;
+    padding-left: 0px;
+    width: 1200px;
+    text-align: left;
     
 }
-
+#our-story-title{
+    font-size: 60pt;
+    margin-left: 35px;
+    display: inline-block;
+    text-align: left;
+    vertical-align:top
+}
+#our-story-container-text{
+    position: relative;
+    display: inline-block;
+    width: 660px;
+    height: 300px;
+    padding: 10px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+#our-story-text{
+    color: #000;
+    font-size: 18pt;
+}
 .titles-effect{
     position: relative;
+    display: inline-block;
     left: -50px;
     top: 100px;
     text-emphasis: none;
     color: yellow
 }
 .text{
+    font-family: Roboto;
+    font-weight: bold;
+    display: block;
     color: white;
-    font-size: 30pt;
-    margin-left: 10px;    
+    font-size: 20pt;
+    margin-left: 10px; 
+    margin-top: 50px;
+    text-align: center;
+}
+footer{
+    display: block;
+    position:static;
+    bottom: 0;
+    height: 200px;
+    width: 1500px;
+    background-color: #323232;
+}
+.footer-text{
+    font-size: 24pt;
+    color: white;
+    text-decoration: underline;
+    margin-left: 30px;
+    margin-right: 70px;
+    vertical-align:50%
 }

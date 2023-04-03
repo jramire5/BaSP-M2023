@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
         <meta charset="UTF-8">
@@ -27,16 +30,15 @@
                 </a>
             </div>
         </header>
-        <aside>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Activities</a></li>
-                <li><a href="#">Memberships</a></li>
-                <li><a href="#">Our Story</a></li>
-            </ul>
-            <div>
+        <aside> 
+                
+            <a href="#"class="side-items">Home</a>
+                <a href="#" class="side-items">Features</a>
+                <a href="#" class="side-items">Contact Us</a>
+                <a href="#" class="side-items">Activities</a>
+                <a href="#" class="side-items">Memberships</a>
+                <a href="#" class="side-items">Our Story</a>
+            <div class="side-contact">
                 <a href="https://goo.gl/maps/bmLpHthUbXpR3h2NA">
                     <img src="../Assets/images/map icon.png" alt="map icon">
                     <p>Av. Pellegrini 3245</p>
@@ -56,126 +58,122 @@
                     and have a bunch of privileges with our differents memberships
                 </p>
             </section>
-
             <section class='secondary-sections' id="section-features">
                 <h2 class="titles">FEATU<span class="titles-effect">RES</span></h2>
-                <div id="features">
-                    <article class="mini-card" id="reservations">
-                        <h3 class="secondary-titles">Reservations</h3>
-                        <p class="text">Choose your favorite class and ensure your place</p>
-                    </article>
+                     <a href="" class="mini-card" id="reservations">
+                        <h3 class="secondary-titles">RESERVATION</h3>
+                        <p class="text">Choose your favorite class.</p>
+                    </a>
                     <article class="mini-card" id="schedule">
-                        <h3 class="secondary-titles">Schedule</h3>
+                        <h3 class="secondary-titles">SCHEDULE</h3>
                         <p class="text">Monday to saturday 8am till 8pm</p>
                     </article>
                     <article class="mini-card" id="memberships">
-                        <h3 class="secondary-titles">Memberships</h3>
+                        <h3 class="secondary-titles">MEMBERSHIP</h3>
                         <p class="text">Pick wich one is best for you</p>
                     </article>
                     <article class="mini-card" id="contact-and-suggestions">
-                        <h3 class="secondary-titles">Contact and suggestions</h3>
-                        <p class="text">Your opinion is important to us, it helps us improve</p>
+                        <h3 class="secondary-titles">CONTACT AND SUGGESTIONS</h3>
+                        <p class="text">Your opinion is important to us</p>
                     </article>
-                </div>
             </section>
             <section class="secondary-sections">
                 <h2 class="titles">CONTACT<span class="titles-effect">US</span></h2>
                 <form action="#" id="contact-form">
-                    <ul>
-                        <li>
-                            <label for="name">Name:</label>
+                    <div class="form">
+                        <div class="form-field">
+                            <label for="name" class="label">Name:</label>
                             <input type="text" value="Name">    
-                        </li> 
-                        <li>
-                            <label for="Surname">Surname:</label>
+                        </div> 
+                        <div class="form-field">
+                            <label for="Surname" class="label">Surname:</label>
                             <input type="text" value="Surname">    
-                        </li>
-                        <li>
-                            <label for="Surname">Email:</label>
+                        </div>
+                        <div class="form-field">
+                            <label for="Surname" class="label">Email:</label>
                             <input type="email" value="message@mail.com"> 
-                        </li>
-                        <li>
-                        <label for="Contact Reason">Contact Reason</label>
-                            <select name="Contact Reason">
+                        </div>
+                        <div class="form-field">
+                            <label for="Contact Reason" class="label">Contact Reason</label>
+                            <select name="Contact Reason" id="select-reason">
                                 <option value="information">Information</option>
                                 <option value="Questions">Questions</option>
                                 <option value="business">Business</option>       
                             </select>
-                        </li>
-                        <li>
-                            <label for="message">Message</label>
-                            <input type="text" value="Message">
-                        </li>
-                        <li>
-                            <input type="submit" value="Submit">
-                        </li>
-                    </ul>                
+                        </div>
+                        <div class="form-field" id="box-message" >
+                            <label for="message" class="label">Message</label>
+                            <input  type="text" value="Message"id="input-message">
+                        </div>
+                        <div class="form-field" class="label" id="box-submit">
+                            <input type="submit" value="Send" id="input-submit">
+                        </div>
+                    </div>                
                 </form>
             </section>
-            <section id="section-activities">
-                <h2>Activities</h2>
-                <article>
-                    <img src="../Assets/images/crossfit.png" alt="people working out">
-                    <h3>Crossfit</h3>
+            <section class="secondary-sections"id="section-activities">
+                <h2 class="titles">ACTIVI<span class="titles-effect">TIES</span></h2>
+                <div class="line">
+                    <article class="activities-container" id="crossfit">
+                        <h3 class="activities-text">Crossfit</h3>
+                    </article>
+                    <article class="activities-container" id="box">
+                        <h3 class="activities-text">BOX</h3>
+                    </article>
+                </div>
+                <article class="activities-container" id="functional">
+                    <h3 class="activities-text">Functional</h3>
                 </article>
-                <article>
-                    <img src="../Assets/images/BOX.png" alt="a woman boxing">
-                    <h3>BOX</h3>
+                <article class="activities-container" id="spining">
+                    <h3 class="activities-text">Spinning</h3>
                 </article>
-                <article>
-                    <img src="../Assets/images/functional.png" alt="people doing functional activities">
-                    <h3>Functional</h3>
-                </article>
-                <article>
-                    <img src="../Assets/images/SPINNING.png" alt="people doing spinning">
-                    <h3>Spinning</h3>
-                </article>
-                <article>
-                    <img src="../Assets/images/fitness.png" alt="people running">
-                    <h3>Fitness</h3>
+                <article class="activities-container" id="fitness">
+                    <h3 class="activities-text">Fitness</h3>
                 </article>
             </section>
-            <section id="section-memberships">
-                <h2>Memberships</h2>
+            <section class="secondary-sections" id="section-memberships">
+                <h2 class="titles">MEMBER<span class="titles-effect">SHIPS</span></h2>
                 <article class="memberships" id="only-classes">
-                    <img src="../Assets/images/only-classes.png" alt="">
-                    <h3>Only Classes membership</h3>
-                    <p>Free accces to classes with registration</p>
-                    <p>Schedule View</p>
+                    <h3 class="secondary-titles">Only Classes Membership</h3>
+                    <p class="text , memberships-text">Free accces to classes with registration</p>
+                    <p class="text , memberships-text">Schedule View</p>
                 </article>
-                <article class="memberships" id="classic-membership">
-                    <img src="../Assets/images/Classic Membership.png" alt="">
-                    <h3>Classic Membership</h3>
-                    <p>Free acces to the Gym Personalized monitoring & coaching</p>
-                    <p>Schedule View</p>
+                <article class="memberships" id="classic">
+                    <h3 class="secondary-titles">Classic Membership</h3>
+                    <p class="text, memberships-text">Free acces to the Gym 
+                        <span class="text">Personalized monitoring & coaching</span>
+                        <span class="text">Schedule View</span>
+                    </p>
                 </article>
                 <article class="memberships" id="black-membership">
-                    <img src="../Assets/images/black membership.png" alt="">
-                    <h3>Black Membership</h3>
-                    <p>Free Acces to the Gym.
-                    Free Acces to the classes with registration.
-                    Personalized monitoring & coaching
+                    <h3 class="secondary-titles">Black Membership</h3>
+                    <p class="text, memberships-text">Free Acces to the Gym.
+                        <span class="text">Free Acces to classes with registration.</span>
+                        <span class="text">Personalized monitoring & coaching</span>
                     </p>
-                    <p>Schedule View</p>
+                    <p class="text">Schedule View</p>
                 </article>
             </section>
             <section id="Section-our-story">
-                <h2>Our Story</h2>
-                <p>We are one of the oldest but most modern gyms. 
+                <h2 class="titles" id="our-story-title">OUR <span class="titles-effect">STORY</span></h2>
+                <div id="our-story-container-text">
+                    <p class="text" id="our-story-text">We are one of the oldest but most modern gyms. 
                     50 trainers work in MR GYM and more than 200 people come to our place everyday.
-                    We are dedicated to helping you improve
-                    your quality of life in a fun and active way
-                </p>
+                       <span class="text" id="our-story-text">We are dedicated to helping you improve
+                        your quality of life in a fun and active </span>
+                    </p>
+                </div>
+
             </section>
         </main>
         <footer>
             <img src="../Assets/images/instagram-logo.png" alt="Instagram Logo">
-            <a href="https://www.instagram.com/">@RocketGym</a>
+            <a href="https://www.instagram.com/" class="footer-text">@RocketGym</a>
             <img src="../Assets/images/facebook-logo.png" alt="facebook-logo">
-            <a href="https://www.facebook.com/">Rocket Gym</a>
+            <a href="https://www.facebook.com/" class="footer-text">Rocket Gym</a>
             <img src="../Assets/images/whatsapp-logo.png" alt="Whatsapp logo">
-            <a href="tel:+1403654896">+1 403 894 056</a>
-            <p>Mega Rocket SA All rights reserved 2023©</p>
+            <a href="tel:+1403654896" class="footer-text">+1 403 894 056</a>
+            <p class="footer-text">Mega Rocket SA All rights reserved 2023©</p>
         </footer>
     </body>
 </html>
