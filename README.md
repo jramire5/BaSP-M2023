@@ -13,11 +13,17 @@ Divided in groups, we did the design and prototype of the webpage. My group did 
 
 This week i did a model of the landing page using just HTML. 
 
+## Week 03 (30/03)
+
+This week i did the styling of the landing page using CSS
+
 ## How to use it
 
 Just download the HTML and open it in your browser
 
-
 ## Author
 
 Juan Nicolas Ramirez
+
+## Year
+2023

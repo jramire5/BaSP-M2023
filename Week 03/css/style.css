@@ -73,7 +73,7 @@ aside{
     display:inline-block;
     background-color: #E3EC39; 
     width: 336px;
-    height:5629px
+    height:6216px
 }
 #side-sections{
     margin-top: 30px;
@@ -92,6 +92,7 @@ aside{
     color: #000;
     position: absolute;
     bottom: 50px;
+    left: 30px
 }
 .side-contact-containers{
     display: block;
@@ -303,7 +304,8 @@ background-image: url(../../Assets/images/BOX.png);
     font-size: 100pt;
     text-align: center;
     color: white;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 130px;
 
 }
 .memberships{
@@ -326,12 +328,12 @@ background-image: url(../../Assets/images/BOX.png);
 #black-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
 }
-#Section-our-story{
+#section-our-story{
     
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 130px;
     margin-left: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 95px;
     padding-left: 0px;
     width: 1200px;
     text-align: left;
@@ -391,6 +393,7 @@ footer{
 .footer-social-media{
     display: inline-block;
     padding-top: 50px;
+    padding-left: 50px;
 }
 #copyright{
     display: inline-block;
