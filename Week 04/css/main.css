@@ -79,6 +79,10 @@ background-clip: border-box;
 border-radius: 10px;
 width: 21.87rem;
 height: 15.625rem;
+margin-top: 1rem;
+margin-bottom: 1.5rem;
+margin-left: 1rem;
+margin-right: 1rem;
 }
 
 #reservations{
@@ -93,42 +97,45 @@ height: 15.625rem;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/contacts-and-suggestions.png);
 }
 #contact-form{
-    border: #323232;
-    width: 1030px;
-    height: 350px;
     background-color: white;
     border-radius: 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-top: 1rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-bottom: 1rem;
 }
 .form{
-    padding-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 .form-field{
-    display: inline-block;
-    align-content: center;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    vertical-align: bottom;
+    width: 80%;
+    padding-left: auto;
+    padding-right: auto;
+    padding: 0.1rem;
 }
 .label{
     display: block;
-    font-size: 16pt;
+    font-size: 1rem;
     padding-bottom: 5px;
 }
 .contact-input{
+    width: 100%;
     padding-left: 3px;
     padding-top: 4px;
     padding-bottom: 4px;
 }
 #box-message{
-    width: 1000px;
+    width: 80%;
     display: block;
     align-self: center;
 }
 #input-message{
-    width: 756px;
-    height: 100px;
+    width: 100%;
+    height: 3rem;
     display: block;
 }
 #select-reason{
@@ -136,14 +143,13 @@ height: 15.625rem;
     border-color: #a8a8a82c;
     border-radius: 5px;
 }
-#box-submit{
-    margin-left: 330px;
-}
+
 #input-submit{
     padding-left: 40px;
     padding-right: 40px;
     background-color: yellow;
     border-radius: 10px;
+    
 }
 .list{
     list-style:none
