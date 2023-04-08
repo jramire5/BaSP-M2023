@@ -1,0 +1,36 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #323232;
+    padding-top: 10%;
+}
+.logo{
+    margin-left: 5rem;
+}
+#logo-img{
+    height: 80%;
+}
+#sitename{
+    display: none;
+    font-weight: normal;
+    color: #E3EC39;
+}
+#sandwich-icon{
+display: inline-block;
+margin-right: 5%;
+}
+.login-signup{
+    display: none;
+    justify-content: space-evenly;
+    position: relative;
+    color: #323232;
+}
+.login-signup-button{
+    display: inline-block;
+    color: #323232;
+    background-color: white;
+    border-radius: 4px;
+}
+#login{
+}

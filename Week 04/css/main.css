@@ -1,0 +1,254 @@
+#side-sections{
+    margin-top: 30px;
+    padding-top: 40px;
+}
+.side-items{
+    display: block;
+    text-align: center;
+    font-size: 24pt;
+    margin-top: 50px;
+    font-weight: bolder;
+    color: #000;
+}
+.side-contact{
+    display: block;
+    color: #000;
+}
+.side-contact-containers{
+    display: block;
+    margin-bottom: 20px;
+}
+.side-contact-items{
+    color: #000;
+    display: inline-block;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+.card{
+    display: inline-block;
+    width: 100%;
+    height: 71.4285714286%;
+}
+#main-section{
+    background-image: url(../../Assets/images/don-t-sit-get-fit.png);
+    background-
+    background-color: #323232;
+    opacity: 100%;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+}
+#main-title{
+    padding-top: 100px;
+}
+
+.main-text{
+    position: relative;
+    font-size: 24pt;
+    font-weight: normal;
+}
+.main-text p{
+    margin-top: 100px;
+}
+.secondary-sections{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+}
+.secondary-titles{
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    text-emphasis: none;
+    color: #E3EC39   
+}
+.secondary-text{
+    display: inline-block;
+    position: relative;
+    bottom: 1rem;
+}
+
+.mini-card{
+position: relative;
+display: inline-block;
+background-clip: border-box;
+border-radius: 10px;
+width: 21.87rem;
+height: 15.625rem;
+}
+
+#reservations{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");}
+#schedule{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/reservations.png);
+}
+#memberships{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/membership.png);
+}
+#contact-and-suggestions{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/contacts-and-suggestions.png);
+}
+#contact-form{
+    border: #323232;
+    width: 1030px;
+    height: 350px;
+    background-color: white;
+    border-radius: 20px;
+}
+.form{
+    padding-left: 100px;
+}
+.form-field{
+    display: inline-block;
+    align-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: bottom;
+}
+.label{
+    display: block;
+    font-size: 16pt;
+    padding-bottom: 5px;
+}
+.contact-input{
+    padding-left: 3px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+#box-message{
+    width: 1000px;
+    display: block;
+    align-self: center;
+}
+#input-message{
+    width: 756px;
+    height: 100px;
+    display: block;
+}
+#select-reason{
+    background-color: #a8a8a82c;
+    border-color: #a8a8a82c;
+    border-radius: 5px;
+}
+#box-submit{
+    margin-left: 330px;
+}
+#input-submit{
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.list{
+    list-style:none
+}
+input{
+    background-color: #a8a8a82c;
+    border-color: #a8a8a82c;
+    border-radius: 5px;
+}
+.activities-container{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 306.15px;
+    height: 187px;
+}
+.activities-text{
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-size: 40pt;
+    margin-left: 10px; 
+    margin-top: 50px;
+    text-align: center;
+}
+.line{
+    display: block;
+    margin-left: 180px;
+    margin-bottom: 30px;
+}
+#crossfit{
+    background-image: url(../../Assets/images/crossfit.png);
+    color: white;
+}
+#box{
+background-image: url(../../Assets/images/BOX.png);
+ display: inline-block;
+ width: 306.15px;
+ height: 187px;
+ color: white;
+}
+#functional{
+    background-image: url(../../Assets/images/functional.png);
+}
+#spining{
+    background-image: url(../../Assets/images/SPINNING.png);
+}
+#fitness{
+    background-image: url(../../Assets/images/fitness.png);
+}
+
+.memberships{
+    width: 480px;
+    height: 575.75px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.memberships-text{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#only-classes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
+}
+#classic{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+}
+#black-membership{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
+}
+#section-our-story{
+    
+    display: inline-block;
+    margin-top: 130px;
+    margin-left: 20px;
+    margin-bottom: 95px;
+    padding-left: 0px;
+    width: 1200px;
+    text-align: left;
+    
+}
+#our-story-title{
+    font-size: 60pt;
+    margin-left: 35px;
+    display: inline-block;
+    text-align: left;
+    vertical-align:top
+}
+#our-story-container-text{
+    position: relative;
+    display: inline-block;
+    width: 660px;
+    height: 300px;
+    padding: 10px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    vertical-align: bottom;
+}
+#our-story-text{
+    color: #000;
+    font-size: 18pt;
+    font-weight: 100;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
