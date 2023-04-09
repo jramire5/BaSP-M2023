@@ -1,25 +1,22 @@
 footer{
-    display: block;
-    position:static;
-    bottom: 0;
-    height: auto;
     width: 100%;
     background-color: #323232;
 }
+.footer-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-img{
+    width: 4rem;
+    height: auto;
+}
 .footer-text{
-    display: inline;
     font-size: 24pt;
     color: white;
     text-decoration: underline;
-    margin-left: 30px;
-    margin-right: 70px;
-    vertical-align:50%
 }
-.footer-social-media{
-    display: inline-block;
-    padding-top: 50px;
-    padding-left: 50px;
-}
+
 #copyright{
     display: inline-block;
     font-size: 14pt;

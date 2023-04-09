@@ -32,7 +32,6 @@
 }
 #main-section{
     background-image: url(../../Assets/images/don-t-sit-get-fit.png);
-    background-
     background-color: #323232;
     opacity: 100%;
     background-size:cover;
@@ -49,11 +48,14 @@
     font-weight: normal;
 }
 .main-text p{
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 .secondary-sections{
     display: flex;
     flex-wrap: wrap;
+    gap: 1em;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     justify-content: center;
     align-items: stretch;
     align-content: stretch;
@@ -177,7 +179,8 @@ input{
 }
 .line{
     display: block;
-    margin-left: 180px;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-bottom: 30px;
 }
 #crossfit{
@@ -208,10 +211,7 @@ background-image: url(../../Assets/images/BOX.png);
     margin-left: auto;
     margin-right: auto;
 }
-.memberships-text{
-    margin-left: 60px;
-    margin-right: 60px;
-}
+
 #only-classes{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
 }
@@ -221,20 +221,14 @@ background-image: url(../../Assets/images/BOX.png);
 #black-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
 }
-#section-our-story{
-    
+#section-our-story{ 
     display: inline-block;
-    margin-top: 130px;
-    margin-left: 20px;
+    margin-top: 8rem;
     margin-bottom: 95px;
-    padding-left: 0px;
-    width: 1200px;
     text-align: left;
-    
 }
 #our-story-title{
     font-size: 60pt;
-    margin-left: 35px;
     display: inline-block;
     text-align: left;
     vertical-align:top
@@ -242,9 +236,6 @@ background-image: url(../../Assets/images/BOX.png);
 #our-story-container-text{
     position: relative;
     display: inline-block;
-    width: 660px;
-    height: 300px;
-    padding: 10px;
     background-color: #E0E0E0;
     border-radius: 10px;
     vertical-align: bottom;
@@ -258,3 +249,4 @@ background-image: url(../../Assets/images/BOX.png);
     padding-left: 40px;
     padding-right: 40px;
 }
+
