@@ -1,11 +1,13 @@
 footer{
     width: 100%;
-    background-color: #323232;
+    background-color: #C4C4C4;
 }
 .footer-content{
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 2rem;
+    color: #000;
 }
 .footer-img{
     width: 4rem;
@@ -13,13 +15,21 @@ footer{
 }
 .footer-text{
     font-size: 24pt;
-    color: white;
+    color: #000;
     text-decoration: underline;
 }
 
 #copyright{
     display: inline-block;
+    color: #000;
     font-size: 14pt;
     text-decoration: none;
     text-align: center;
+}
+@media only screen and (min-width: 1025px) {
+.footer-content{
+    flex-direction: row;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 }

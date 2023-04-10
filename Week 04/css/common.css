@@ -16,13 +16,13 @@ a{
 body{
     align-content: center;
     background-color: #535353;
-
+    background-repeat: no-repeat;
 }
 span{
     display: block;
 }
 aside{
-    position: absolute;
+    position: relative;
     left: 0;
     display:none;
     background-color: 
@@ -30,13 +30,20 @@ aside{
     width: 336px;
     height:6216px
 }
-
+.main-and-aside{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
 .text{
     font-family: Roboto;
     font-weight: bold;
     display: block;
     color: white;
-    font-size: 1rem;
+    font-size: rem;
     text-align: center;
 }
 .titles{
@@ -59,12 +66,8 @@ aside{
     text-emphasis: none;
     color: yellow
 }
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
-  }
   
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 912px) {
     /* For tablets: */
     .col-s-1 {width: 8.33%;}
     .col-s-2 {width: 16.66%;}
@@ -94,4 +97,15 @@ aside{
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 1025px) {
+
+    aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .titles{
+        font-size: 8rem;
+    }
   }
