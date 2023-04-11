@@ -36,6 +36,7 @@
     opacity: 100%;
     background-size:cover;
     width: 100%;
+    min-height: 38rem;
     height: auto;
 }
 #main-title{
@@ -44,7 +45,7 @@
 
 .main-text{
     position: relative;
-    font-size: 24pt;
+    font-size: 2rem;
     font-weight: normal;
 }
 .main-text p{
@@ -53,12 +54,12 @@
 .secondary-sections{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     gap: 1em;
     padding-top: 1rem;
     padding-bottom: 1rem;
     justify-content: center;
-    align-items: stretch;
-    align-content: stretch;
+    align-content: center;
     flex-wrap: wrap;
 }
 .secondary-titles{
@@ -73,7 +74,6 @@
     position: relative;
     bottom: 1rem;
 }
-
 .mini-card{
 position: relative;
 display: flex;
@@ -86,7 +86,6 @@ border-radius: 10px;
 width: 21.87rem;
 height: 15.625rem;
 }
-
 #reservations{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");}
 #schedule{
@@ -109,9 +108,9 @@ height: 15.625rem;
     padding-bottom: 1rem;
 }
 .form{
-    width: 30rem;
+    width: 77%;
     display: flex;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: center;
     flex-direction: column;
     justify-items: center;
@@ -156,7 +155,7 @@ height: 15.625rem;
     margin: auto;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: yellow;
+    background-color: #E3EC39;
     border-radius: 10px;    
 }
 #box-submit{
@@ -220,8 +219,8 @@ background-image: url(../../Assets/images/BOX.png);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 30rem;
-    height: 35rem;
+    width: 20rem;
+    height: 24rem;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -241,10 +240,10 @@ background-image: url(../../Assets/images/BOX.png);
     margin-bottom: 95px;
     text-align: left;
 }
-#our-story-title{
+.our-story-title{
     font-size: 60pt;
     display: inline-block;
-    text-align: left;
+    text-align: center;
     vertical-align:top
 }
 #our-story-container-text{
@@ -264,12 +263,18 @@ background-image: url(../../Assets/images/BOX.png);
     padding-left: 40px;
     padding-right: 40px;
 }
+@media screen and (min-width: 769px) {
+
+}
 @media screen and (min-width: 1025px) {
     #main-section{
         background-image: url(../../Assets/images/don-t-sit-get-fit.png);
         width: 100%;
         min-height: 50vw;
     }
+    .secondary-sections{
+        flex-direction: row;
+     }   
     .form{
         width: 80%;
         text-align: left;
@@ -292,7 +297,13 @@ background-image: url(../../Assets/images/BOX.png);
         display: block;
         align-self: center;
     }
+    .section-memberships{
+        flex-direction: column;
+    }
     .memberships{
         flex-direction: column;
+    }
+    .our-story-title{
+        text-align: left;
     }
 }

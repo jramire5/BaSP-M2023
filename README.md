@@ -17,9 +17,13 @@ This week i did a model of the landing page using just HTML.
 
 This week i did the styling of the landing page using CSS. Screen size: 1512px
 
+## Week 04 (06/04)
+
+This week i made the site responsive using flexbox and media queries
+
 ## How to use it
 
-Just download the folder and open index.html it in your browser
+
 
 ## Author
 
