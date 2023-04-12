@@ -30,8 +30,8 @@
     width: 100%;
     height: 71.4285714286%;
 }
-#main-section{
-    background-image: url(../../Assets/images/dont-sit-get-fit-mobile.png);
+.main-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../Assets/images/dont-sit-get-fit-mobile.png");
     background-color: #323232;
     opacity: 100%;
     background-size:cover;
@@ -256,7 +256,6 @@ background-image: url(../../Assets/images/BOX.png);
 }
 @media screen and (min-width: 601px) {
     .main-section{
-        background-image: url(../../Assets/images/don-t-sit-get-fit.png);
         width: 100%;
         min-height: 35rem;
     }
@@ -264,6 +263,8 @@ background-image: url(../../Assets/images/BOX.png);
         font-size: 2rem;
         padding-left: 10%;
         padding-right: 10%;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
     .form{
         width: 75%;

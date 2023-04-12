@@ -14,6 +14,7 @@
     height: 5rem;
 }
 .sitename{
+    display: none;
     visibility: hidden;
     font-weight: normal;
     padding-left: 1rem;
@@ -42,10 +43,12 @@ padding-right: 5%;
     .logo{
         display: flex;
         padding-top: 1rem;
+        padding-bottom: 1rem;
         flex-direction: column;
         align-items: center;
     }
     .sitename{
+        display: inline;
         visibility: visible;
         text-align: left;
     }
