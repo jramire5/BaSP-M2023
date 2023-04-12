@@ -23,6 +23,9 @@ This week i made the site responsive using flexbox and media queries
 
 ## How to use it
 
+Open the following link:
+
+https://jramire5.github.io/BaSP-M2023/Week-04/index.html
 
 
 ## Author

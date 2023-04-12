@@ -40,13 +40,14 @@
     height: auto;
 }
 #main-title{
-    padding-top: 100px;
+    padding-top: 6rem;
 }
 
 .main-text{
     position: relative;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
+    padding-bottom: 5rem ;
 }
 .main-text p{
     margin-top: 5rem;
@@ -64,7 +65,7 @@
 }
 .secondary-titles{
     position: relative;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
     text-emphasis: none;
     color: #E3EC39   
@@ -73,6 +74,8 @@
     display: inline-block;
     position: relative;
     bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .mini-card{
 position: relative;
@@ -85,6 +88,7 @@ background-clip: border-box;
 border-radius: 10px;
 width: 21.87rem;
 height: 15.625rem;
+padding-top: 2rem;
 }
 #reservations{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");}
@@ -152,9 +156,8 @@ height: 15.625rem;
     align-items: center;
 }
 #input-submit{
-    margin: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: #E3EC39;
     border-radius: 10px;    
 }
@@ -171,9 +174,9 @@ input{
     border-radius: 5px;
 }
 .activities-container{
-    display: inline-block;
-    margin-left: 10px;
-    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 306.15px;
     height: 187px;
 }
@@ -182,14 +185,10 @@ input{
     display: block;
     color: white;
     font-size: 40pt;
-    margin-left: 10px; 
-    margin-top: 50px;
     text-align: center;
 }
 .line{
     display: block;
-    margin-left: 10rem;
-    margin-right: 10rem;
     margin-bottom: 30px;
 }
 #crossfit{
@@ -198,9 +197,6 @@ input{
 }
 #box{
 background-image: url(../../Assets/images/BOX.png);
- display: inline-block;
- width: 306.15px;
- height: 187px;
  color: white;
 }
 #functional{
@@ -220,10 +216,8 @@ background-image: url(../../Assets/images/BOX.png);
     flex-direction: column;
     justify-content: space-evenly;
     width: 20rem;
-    height: 24rem;
+    height: 36rem;
     border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #only-classes{
@@ -235,75 +229,104 @@ background-image: url(../../Assets/images/BOX.png);
 #black-membership{
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
 }
-#section-our-story{ 
-    margin-top: 8rem;
-    margin-bottom: 95px;
-    text-align: left;
+.section-our-story{ 
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
 }
 .our-story-title{
     font-size: 60pt;
-    display: inline-block;
     text-align: center;
     vertical-align:top
 }
-#our-story-container-text{
-    position: relative;
+.our-story-container-text{
     display: inline-block;
     background-color: #E0E0E0;
     border-radius: 10px;
     vertical-align: bottom;
-    width: 74%;
+    width: 22rem
 }
 #our-story-text{
     color: #000;
     font-size: 18pt;
     font-weight: 100;
-    margin-left: 15px;
-    margin-right: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-@media screen and (min-width: 769px) {
-
-}
-@media screen and (min-width: 1025px) {
-    #main-section{
+@media screen and (min-width: 601px) {
+    .main-section{
         background-image: url(../../Assets/images/don-t-sit-get-fit.png);
         width: 100%;
-        min-height: 50vw;
+        min-height: 35rem;
     }
-    .secondary-sections{
-        flex-direction: row;
-     }   
+    .main-text{
+        font-size: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .form{
         width: 80%;
         text-align: left;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
     }
     #contact-form{
-        padding-top: 5rem;
+        padding-top: 3rem;
         padding-left: 2rem;
         padding-right: 2rem;
-        padding-bottom: 5rem;
+        padding-bottom: 3rem;
     }
     .form-field{
         width: 20%;
-        padding: 1rem;
     }
     #box-message{
-        width: 100%;
-        padding: 1rem;
+        width: 97%;
         display: block;
         align-self: center;
     }
+    .activities-container{
+    background-size: cover;
+    width: 604px;
+    height: 372px;
+}
+    .our-story-container-text{
+        width: 30rem;
+        max-width: 40vw;    
+        }
+}
+@media screen and (min-width: 1025px) {
+    .main-section{
+        background-image: url(../../Assets/images/don-t-sit-get-fit.png);
+        width: 100%;
+        min-height: 35rem;
+    }
+    .main-text{
+        font-size: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .secondary-sections{
+        flex-direction: row;
+     }   
     .section-memberships{
         flex-direction: column;
     }
     .memberships{
+        width: 30rem;
+        height: 36rem;
+    }    
+    .memberships{
         flex-direction: column;
     }
-    .our-story-title{
-        text-align: left;
+    .section-our-story{
+        flex-direction: row;
+        justify-content: flex-start
+    }
+    .our-story-container-text{
+    width: 45rem;
+    max-width: 30vw;    
     }
 }

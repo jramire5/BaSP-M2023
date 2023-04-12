@@ -1,6 +1,7 @@
 footer{
     width: 100%;
     background-color: #C4C4C4;
+    padding-top: 5rem;
 }
 .footer-content{
     display: flex;
@@ -27,7 +28,10 @@ footer{
     text-align: center;
 }
 @media only screen and (min-width: 1025px) {
-.footer-content{
+    footer{
+        padding-top: 2rem;
+    }
+    .footer-content{
     flex-direction: row;
     padding-top: 2rem;
     padding-bottom: 1rem;
