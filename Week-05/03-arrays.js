@@ -1,3 +1,4 @@
+console.log("exercise 3")
 var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 //3a.
 console.log("3a." + months[5] + months[11]);

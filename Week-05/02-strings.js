@@ -1,3 +1,4 @@
+console.log("exercise 2")
 // 2a
 var longUpperCaseString = "hola como estas";
 console.log("2a. Original string: " + longUpperCaseString + "\n To upper case:" + longUpperCaseString.toUpperCase())

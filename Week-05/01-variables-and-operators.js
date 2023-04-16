@@ -2,6 +2,7 @@
 var number1 = 4;
 var number2 = 5;
 var addNumbers = number1+number2;
+console.log("exercise 1")
 console.log("1a. if you add " + number1 + " and  " + number2 + " the result is " + addNumbers);
 // b
 var word1 = "Hola";

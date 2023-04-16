@@ -1,5 +1,5 @@
 //5a.
-console.log("\nExcersice 5")
+console.log("\nExcercise 5\n")
 var bichos = ["mosquito", "mariposa", "hormiga", "cucaracha", "pulga"];
 //b.
 for (var index = 0; index < bichos.length; index++) {
