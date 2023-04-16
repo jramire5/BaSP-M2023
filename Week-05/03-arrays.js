@@ -4,34 +4,24 @@ console.log("3a." + months[5] + months[11]);
 //3b.
 var monthsOrdered = months.slice();
 monthsOrdered.sort();
-for (var index = 0; index <= months.length; index++) {
-    console.log(monthsOrdered[index]);
-}
+console.log(monthsOrdered);
 //3c
 months.unshift("Meses del Año:");
 months.push("Que te parece?");
 console.log("3c.")
-for (var index = 0; index <= months.length; index++) {
-    console.log(months[index])
-}
+console.log(months)
 months.shift();
 months.pop();
 console.log("3d.")
-for (var index = 0; index <= months.length; index++) {
-    console.log(months[index])
-}
+console.log(months)
 //3e
 months.reverse();
 console.log("3e.");
-for (var index = 0; index <= months.length; index++) {
-    console.log(months[index])
-}
-months.reverse()
+console.log(months);
+months.reverse();
 //3f
-var mesesUnidos = months.join();
+var mesesUnidos = months.join("-");
 console.log("3f. \n" + mesesUnidos);
 //3g
 mayToNovember = months.slice(4,11);
-for (var index = 0; index <= months.length; index++) {
-    console.log(mayToNovember[index])
-}
+console.log(mayToNovember)

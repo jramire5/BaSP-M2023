@@ -1,6 +1,6 @@
 // 4a
 var randomNum = Math.random()
-console.log("Excersice 4 \na.")
+console.log("\nExcersice 4 \na.")
 if(randomNum >=0.5){
     console.log("Greater than or equal to 0,5");
 }else{
