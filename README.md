@@ -21,12 +21,21 @@ This week i did the styling of the landing page using CSS. Screen size: 1512px
 
 This week i made the site responsive using flexbox and media queries
 
+## Week 05
+
+This week the challenge was to use Javascript to solve some excercises
+
 ## How to use it
 
-Open the following link:
+Open the following links:
+
+For the Web page, updated up to week 4
 
 https://jramire5.github.io/BaSP-M2023/Week-04/index.html
 
+For the week 05 excercises:
+
+https://jramire5.github.io/BaSP-M2023/Week-05/index.html
 
 ## Author
 
