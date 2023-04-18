@@ -3,44 +3,52 @@
     src: url('../../Assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
-  }
-a{
+}
+
+a {
     text-decoration: none;
     color: #000;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     font-family: Roboto;
 }
-body{
+
+body {
     align-content: center;
     background-color: #535353;
     background-repeat: no-repeat;
 }
-span{
+
+span {
     display: block;
 }
-aside{
+
+aside {
     position: sticky;
-    display:none;
-    background-color:#E3EC39; 
+    display: none;
+    background-color: #E3EC39;
     width: 24em;
     height: 125vh;
     min-height: fit-content;
     gap: 1rem;
 }
-.main-and-aside{
+
+.main-and-aside {
     display: flex;
     flex-direction: row;
     width: 100vw;
 }
-main{
+
+main {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-.text{
+
+.text {
     font-family: Roboto;
     font-weight: bold;
     display: block;
@@ -50,7 +58,8 @@ main{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
-.titles{
+
+.titles {
     align-self: center;
     display: block;
     margin: auto;
@@ -64,7 +73,8 @@ main{
     padding-top: 5%;
     padding-bottom: 7%;
 }
-.titles-effect{
+
+.titles-effect {
     position: relative;
     display: block;
     text-align: center;
@@ -75,15 +85,17 @@ main{
 
 @media only screen and (min-width: 601px) {
 
-    .titles{
+    .titles {
         font-size: 4rem;
     }
-    .titles-effect{
-        left:6rem
+
+    .titles-effect {
+        left: 6rem
     }
 }
-  @media only screen and (min-width: 1025px) {
-    aside{
+
+@media only screen and (min-width: 1025px) {
+    aside {
         top: 0;
         display: flex;
         flex-direction: column;
@@ -91,13 +103,16 @@ main{
         height: 125vh;
         min-height: fit-content;
     }
-    .titles{
+
+    .titles {
         font-size: 8rem;
     }
-    .titles-effect{
-    left: 8rem;
+
+    .titles-effect {
+        left: 8rem;
     }
-    .text{
+
+    .text {
         font-size: 2rem;
     }
-  }
+}
