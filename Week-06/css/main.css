@@ -37,7 +37,7 @@
 }
 
 .main-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../Assets/images/dont-sit-get-fit-mobile.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/dont-sit-get-fit-mobile.png");
     background-color: #323232;
     opacity: 100%;
     background-size: cover;
@@ -105,7 +105,7 @@
 }
 
 #reservations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/reservations.png");
 }
 
 #schedule {
@@ -262,13 +262,13 @@ input {
     border-radius: 10px;
 }
 #only-classes {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/only-classes.png");
 }
 #classic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/classic-membership.png");
 }
 #black-membership {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/black-membership.png");
 }
 .section-our-story {
     display: flex;

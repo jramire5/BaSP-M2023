@@ -13,7 +13,6 @@ monthsOrdered.sort();
 console.log(monthsOrdered);
 //3c
 //Agregar un elemento al principio y al final del array (utilizar unshift y push).
-console.log("3c.")
 months.unshift("Meses del Año:");
 months.push("Que te parece?");
 console.log("3c.")

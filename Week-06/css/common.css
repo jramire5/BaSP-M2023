@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../../Assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+
+body {
+    align-content: center;
+    background-color: #535353;
+    background-repeat: no-repeat;
+}
+
+span {
+    display: block;
+}
+
+aside {
+    position: sticky;
+    display: none;
+    background-color: #E3EC39;
+    width: 24em;
+    height: 125vh;
+    min-height: fit-content;
+    gap: 1rem;
+}
+
+.main-and-aside {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.text {
+    font-family: Roboto;
+    font-weight: bold;
+    display: block;
+    color: white;
+    font-size: 1rem;
+    text-align: center;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.titles {
+    align-self: center;
+    display: block;
+    margin: auto;
+    width: 60%;
+    font-family: Roboto;
+    text-emphasis: none;
+    text-decoration: none;
+    font-size: 3rem;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 7%;
+}
+
+.titles-effect {
+    position: relative;
+    display: block;
+    text-align: center;
+    top: 0rem;
+    /* left: 2.5rem; */
+    color: #E3EC39
+}
+
+@media only screen and (min-width: 601px) {
+
+    .titles {
+        font-size: 4rem;
+    }
+
+    .titles-effect {
+        left: 6rem
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    aside {
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 125vh;
+        min-height: fit-content;
+    }
+
+    .titles {
+        font-size: 8rem;
+    }
+
+    .titles-effect {
+        left: 8rem;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+}
