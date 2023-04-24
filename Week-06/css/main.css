@@ -37,7 +37,7 @@
 }
 
 .main-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/dont-sit-get-fit-mobile.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("../../Assets/images/dont-sit-get-fit-mobile.png");
     background-color: #323232;
     opacity: 100%;
     background-size: cover;
@@ -105,19 +105,19 @@
 }
 
 #reservations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/reservations.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/reservations.png");
 }
 
 #schedule {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/reservations.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");
 }
 
 #memberships {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/membership.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/membership.png");
 }
 
 #contact-and-suggestions {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../Assets/images/contacts-and-suggestions.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/contacts-and-suggestions.png");
 }
 
 #contact-form {
@@ -132,7 +132,7 @@
 }
 
 .form {
-    width: 77%;
+    width: 95%;
     display: flex;
     gap: 1rem;
     text-align: center;
@@ -183,7 +183,7 @@
     align-items: center;
 }
 
-#input-submit {
+.input-submit {
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: #E3EC39;
@@ -228,25 +228,25 @@ input {
 }
 
 #crossfit {
-    background-image: url(../../Assets/images/crossfit.png);
+    background-image: url("../../Assets/images/crossfit.png");
     color: white;
 }
 
 #box {
-    background-image: url(../../Assets/images/BOX.png);
+    background-image: url("../../Assets/images/BOX.png");
     color: white;
 }
 
 #functional {
-    background-image: url(../../Assets/images/functional.png);
+    background-image: url("../../Assets/images/functional.png");
 }
 
 #spining {
-    background-image: url(../../Assets/images/SPINNING.png);
+    background-image: url("../../Assets/images/SPINNING.png");
 }
 
 #fitness {
-    background-image: url(../../Assets/images/fitness.png);
+    background-image: url("../../Assets/images/fitness.png");
 }
 
 .section-memberships {
@@ -262,13 +262,13 @@ input {
     border-radius: 10px;
 }
 #only-classes {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/only-classes.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/only-classes.png");
 }
 #classic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/classic-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/classic-membership.png");
 }
 #black-membership {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(../../../Assets/images/black-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/black-membership.png");
 }
 .section-our-story {
     display: flex;
@@ -309,7 +309,6 @@ input {
         margin-top: 1rem;
     }
     .form {
-        width: 75%;
         text-align: left;
         flex-direction: row;
         flex-wrap: wrap;

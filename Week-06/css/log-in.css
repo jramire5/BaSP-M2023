@@ -1,0 +1,17 @@
+body{
+    background-image: url("../../Assets/images/dont-sit-get-fit-mobile.png");
+    background-size: cover;
+}
+    main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    margin: 1rem;
+    padding: 1rem;
+    align-self: center;
+    justify-self: center;
+    background-color: #E3EC39;
+    border-radius: 1rem;
+}

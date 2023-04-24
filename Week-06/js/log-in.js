@@ -1,26 +1,26 @@
 console.log(document.body);
 console.log(document.getElementById('login-email'));
 var emailInput = document.getElementById("email-input");
-var passwordInput = document.getElementById("password-input")
+var passwordInput = document.getElementById("password-input");
+var submitInput = document.getElementById("input-submit");
+
 function blurEmail(){
     var email = emailInput.value;
     var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
     if (!emailExpression.test(email)) {
       emailInput.style.borderColor = "red";
       document.getElementById("email-error").textContent = "Please enter a valid email address.";
-      document.getElementById("input-submit").disabled = true;
+      return "Please enter a valid email address.";
     }else{
         emailInput.style.borderColor = "black";
         document.getElementById("email-error").textContent = "";
-        document.getElementById("input-submit").disabled = false;
+        return -1;
     }
 }
 function focusEmail(){
     emailInput.style.borderColor = "black";
     document.getElementById("email-error").textContent = "";
-    document.getElementById("input-submit").disabled = false;
 }
-
 function specialCharacterCheck(wordInput) {
     var specialCharacters = "/[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?]+/";
     for (var i = 0; i < wordInput.length; i++) {
@@ -30,7 +30,6 @@ function specialCharacterCheck(wordInput) {
     }
     return false;
 }
-
 function numbersCheck(wordInput) {
     var numbers = "0123456789";
     for (var i = 0; i < wordInput.length; i++) {
@@ -43,19 +42,31 @@ function numbersCheck(wordInput) {
 function blurPassword(){
     var pass = passwordInput.value;
     if (specialCharacterCheck(pass) == true) {
-      console.log("no valido");
       passwordInput.style.borderColor = "red";
-      document.getElementById("password-error").textContent = "Please enter a valid email address.";
-      document.getElementById("input-submit").disabled = true;
+      document.getElementById("password-error").textContent = "Invalid Password";
+      return "Invalid Password"
     }else{
-        console.log("valido")
+        console.log("valid")
         passwordInput.style.borderColor = "black";
         document.getElementById("password-error").textContent = "";
-        document.getElementById("input-submit").disabled = false;
+        return -1;
+    }
+}
+function focusPassword(){
+    passwordInput.style.borderColor = "black";
+    document.getElementById("password-error").textContent = "";
+}
+function clickSubmit(){
+    if(blurPassword() != -1){
+        alert(blurPassword());
+    }else if(blurEmail() != -1){
+        alert(blurEmail());
+    }else{
+        alert("Succesful log in")
     }
 }
 passwordInput.addEventListener("blur", blurPassword);
+passwordInput.addEventListener("focus", focusPassword);
 emailInput.addEventListener("blur", blurEmail);
 emailInput.addEventListener("focus", focusEmail);
-
-
+submitInput.addEventListener("click", clickSubmit);

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/common.css">
+        <link rel="stylesheet" href="../css/signup.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/footer.css">
+        <title>Sign Up</title>
+        <script defer src="../js/sign-up.js"></script>
+
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">
+                <img src="../../Assets/images/radiumrocketlogo.png" alt="Mega Rocket Logo" class="logo-img" id="logo-img">
+                <h1 class="sitename" id="sitename">MEGA ROCKET S.A</h1>
+            </a>
+            <div class="login-signup">
+                <div class="login-signup-button">
+                    <a href="" id="login">Log in
+                        <img src="../../Assets/images/login-icon.png" alt="Log In">
+                    </a>
+                </div>
+                <div>
+                    <div class="login-signup-button">
+                        <a href="#">Sign Up
+                            <img src="../../Assets/images/signup-icon.png" alt="sign up icon">
+                        </a>
+                    </div>
+                    <img src="../../Assets/images/sandwich-icon.png" alt="sandwich icon" class="sandwich-icon">
+                </div>
+        </header>
+        <main>
+            <div class="signup-container" id="signup-container">
+                <form  class="form" action="" id="signup-form">
+                    <div class="" id="signup-name">
+                        <label for="Name" class="label">Name</label>
+                        <input type="text" value="name" class="contact-input" id="name-input">
+                        <p id="name-error"></p>
+                    </div>
+                    <div id="signup-surname">
+                        <label for="surname" class="label">Surname</label>
+                        <input type="text" class="contact-input" id="surname-input">
+                        <p class="error" id="surname-error"></p>
+                    </div>
+                    <div id="signup-ID">
+                        <label for="id" class="label">ID</label>
+                        <input type="text" class="contact-input" id="id-input">
+                        <p class="error"></p>
+                    </div>
+                    <div id="signup-birthdate">
+                        <label for="Date-of-birth" class="label">Date of Birth</label>
+                        <input type="text" class="contact-input" id="birthdate-input">
+                        <p class="error"></p>
+                    </div>
+                    <div   id="signup-phone">
+                        <label for="phone" class="label">Phone</label>
+                        <input type="text" class="contact-input" id="phone-input" name="phone">
+                        <p class="error"></p>
+                      </div>
+                    <div   id="signup-address">
+                        <label for="address" class="label">Address</label>
+                        <input type="text" class="contact-input" id="address-input" name="address" >
+                        <p class="error"></p>
+                    </div>   
+                    <div   id="signup-city">
+                        <label for="city" class="label">City</label>
+                        <input type="text" class="contact-input" id="city-input" name="city">
+                        <p class="error"></p>
+                    </div>  
+                    <div   id="signup-zipcode">
+                        <label for="zipcode" class="label">Zip Code</label>
+                        <input type="text" class="contact-input" id="zipcode-input" name="zipcode">
+                        <p class="error"></p>
+                    </div>
+                    <div   id="signup-email">
+                        <label for="Email" class="label">Email:</label>
+                        <input type="text" class="contact-input" id="email-input">
+                        <p id="email-error"></p>
+                    </div>
+                    <div   id="signup-password">
+                        <label for="Email" class="label">Password:</label>
+                        <input type="password" class="contact-input" id="password-input">
+                        <p id="password-error"></p>
+                    </div>
+                    <input class="input-submit" type="submit" value="Register" id="input-register">
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
