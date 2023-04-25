@@ -22,6 +22,14 @@ function numbersCheck(wordInput) {
     }
     return false;
 }
+function anyLetterCheck(wordInput){
+    for (var i = 0; i < wordInput.length; i++) {
+      if (wordInput[i].toLowerCase() != wordInput[i].toUpperCase()) {
+        return true;
+      }
+    }
+    return false;
+  }
 function focusAll(name, id) {
     name.style.borderColor = "black";
     document.getElementById(id).innerText = "";
@@ -53,20 +61,19 @@ function blurEmail(){
 }
 function blurPassword(){
     var pass = passwordInput.value;
-    if (requiredCheck(passwordInput,"password-error") == "required") {
-        return requiredCheck(passwordInput,"password-error");
-    }
-    else if (specialCharacterCheck(pass) == true) {
+    if(pass.length < 8){
       passwordInput.style.borderColor = "red";
-      document.getElementById("password-error").textContent = "Invalid Password";
-      return "Please enter a valid password."
-    }else{
-        console.log("valid")
-        passwordInput.style.borderColor = "black";
-        document.getElementById("password-error").textContent = "";
-        return "OK";
+      document.getElementById("password-error").textContent = "Insert at least 8 characters";
+      return "Please insert at least 8 characters."
     }
-}
+    else if(!(anyLetterCheck(pass) && numbersCheck(pass))){
+      password.style.borderColor = "red";
+      document.getElementById(id).textContent = "Please use letters AND numbers";
+      return "Please use letters and numbers."
+    }else{
+        return pass;
+      }
+    }
 function clickSubmit(){
     if(blurPassword() != "" || blurEmail != ""){
         alert("email: " + blurEmail() + "\npassword: "+ blurPassword());
@@ -75,7 +82,11 @@ function clickSubmit(){
     }
 }
 passwordInput.addEventListener("blur", blurPassword);
-passwordInput.addEventListener("focus", focusPassword);
 emailInput.addEventListener("blur", blurEmail);
-emailInput.addEventListener("focus", focusEmail);
+passwordInput.addEventListener("focus", function(){
+    focusAll(passwordInput,"password-error")
+})
+emailInput.addEventListener("focus", function(){
+    focusAll(emailInput,"email-error")
+})
 submitInput.addEventListener("click", clickSubmit);
