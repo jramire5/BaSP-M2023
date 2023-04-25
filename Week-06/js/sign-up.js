@@ -66,7 +66,7 @@ function justNumbersCheck(numberInput , id) {
   valueNumber = numberInput.value;
   if(!numbersCheck(valueNumber) && valueNumber.length != 0){
     numberInput.style.borderColor = "red";
-    document.getElementById(id).innerText = "Please enter just numbers";
+    document.getElementById(id).innerText = "Please insert just numbers";
     return true
   }else{
     return false
@@ -81,23 +81,28 @@ function blurID(input, id){
   valueID = input.value;
   if(justNumbersCheck(input, id)){
     return justNumbersCheck(input,id)
-  }else if(valueID.length != 7){
+  }else if(valueID.length < 7){
       input.style.borderColor = "red";
-      document.getElementById(id).innerText = "Please enter at least 7 numbers";
+    return  document.getElementById(id).innerText = "Please insert at least 7 numbers";
+  }else{
+    return valueID;
   }
 }
 function blurName(name, id) {
   var valueName = name.value;
   if (valueName.length <= 3 || !justLettersCheck(valueName)) {
-    console.log("non-valid");
     name.style.borderColor = "red";
     document.getElementById(id).style.color = "red";
     if(!justLettersCheck(valueName)){
-      document.getElementById(id).innerText = "Please enter just letters";
+      document.getElementById(id).innerText = "Please insert just letters";
+      return ("non valid character");
     }
     else{
-      document.getElementById(id).innerText = "Please enter more than 3 letters";
+      document.getElementById(id).innerText = "Please insert more than 3 letters";
+      return "Insert more than 3 letters"
     }
+  }else{
+    return valueName;
   }
 }
 function blurPhone(input,id){
@@ -109,7 +114,10 @@ function blurPhone(input,id){
       return justNumbersCheck(input, id)
   }else if(value.length != 10){
       input.style.borderColor = "red";
-      document.getElementById(id).innerText = "Please enter 10 numbers";
+      document.getElementById(id).innerText = "Please insert 10 numbers";
+      return "10 numbers needed";
+  }else{
+    return value;
   }
 }
 function blurZipCode(numberInput , id) {
@@ -118,12 +126,19 @@ function blurZipCode(numberInput , id) {
     return justNumbersCheck(numberInput,id)
   }else if(valueNumber.length < 4 || valueNumber.length > 5){
     numberInput.style.borderColor = "red";
-    document.getElementById(id).innerText = "Please enter " + 4 + " or " + 5 + " numbers";
+    document.getElementById(id).innerText = "Please insert " + 4 + " or " + 5 + " numbers";
+    return "Insert 4 or 5 Numbers";
+  }else{
+    return valueNumber;
   }
 }
 function blurDate(birthdateInput, id){
   console.log(birthdateInput.value);
-  return requiredCheck(birthdateInput,id);
+  if (requiredCheck(birthdateInput,id) == "required"){
+    return requiredCheck(birthdateInput,id)
+  }else{
+    return birthdateInput.value;
+  }
 }
 function blurEmail(){
   var email = emailInput.value;
@@ -134,9 +149,9 @@ function blurEmail(){
   if (!emailExpression.test(email)) {
     emailInput.style.borderColor = "red";
     document.getElementById("email-error").innerText = "Invalid Email Format";
-    return "Please enter a valid email address.";
+    return "Please insert a valid email address.";
   }else{
-      return "OK";
+      return email;
   }
 }
 function blurCity(){
@@ -147,9 +162,11 @@ function blurCity(){
     cityInput.style.borderColor = "red";
     document.getElementById("city-error").innerText = "Please don't use special characters like !*/-"
     return "Invalid character"
+  }else{
+    return cityInput.value
   }
 }
-function blurAdress(){
+function blurAddress(){
   if(requiredCheck(addressInput, "adress-error") == "required"){
     return requiredCheck(cityInput, "adress-error");
   }
@@ -159,6 +176,8 @@ function blurAdress(){
     if (emptyPos <= 0 || emptyPos+1 == adressValue.length) {
       cityInput.style.borderColor = "red";
       document.getElementById("adress-error").innerText = "Please "
+    }else{
+      return adressValue;
     }
   }else{
     cityInput.style.borderColor = "red";
@@ -169,18 +188,15 @@ function blurPassword(password,id){
   var pass = password.value;
   if(pass.length < 8){
     password.style.borderColor = "red";
-    document.getElementById(id).textContent = "Please enter more than 8 characters";
-    return "Please enter more than 8 characters."
+    document.getElementById(id).textContent = "Please insert more than 8 characters";
+    return "Please insert more than 8 characters."
   }
   else if(!(anyLetterCheck(pass) && numbersCheck(pass))){
     password.style.borderColor = "red";
     document.getElementById(id).textContent = "Please use letters AND numbers";
     return "Please use letters and numbers."
   }else{
-      console.log("valid")
-      password.style.borderColor = "black";
-      document.getElementById(id).textContent = "";
-      return "OK";
+      return pass;
     }
   }
 function blurRepeatPassword(){
@@ -192,6 +208,24 @@ function blurRepeatPassword(){
     return	blurPassword(repeatPasswordInput, "repeat-password-error")
   }
 }
+
+function sumbitRegister(){
+  alert(
+    "name: " + blurName(nameInput, "name-error") +
+    "\nsurname: " + blurName(surnameInput, "surname-error") + 
+    "\nID: " + blurID(idInput, "id-error") + 
+    "\nbirth date: " + blurDate(birthdateInput, "birthdate-error") +
+    "\nphone: " + blurPhone(phoneInput, "phone-error") +
+    "\naddress: " + blurAddress() +
+    "\ncity: " + blurCity() +
+    "\nzip code: " + blurZipCode(zipcodeInput,"zipcode-error") +
+    "\nemail: " + blurEmail() +
+    "\npassword: " + blurPassword(passwordInput, "password-error") +
+    "\nrepeat password: " + blurRepeatPassword()
+
+  );
+}
+
 nameInput.addEventListener("blur", function () {
   blurName(nameInput, "name-error");
 });
@@ -212,7 +246,7 @@ zipcodeInput.addEventListener("blur", function(){
 });
 emailInput.addEventListener("blur", blurEmail);
 cityInput.addEventListener("blur", blurCity)
-addressInput.addEventListener("blur", blurAdress)
+addressInput.addEventListener("blur", blurAddress)
 passwordInput.addEventListener("blur", function(){ 
   blurPassword(passwordInput,"password-error");
 });
@@ -245,4 +279,13 @@ cityInput.addEventListener("focus", function(){
 })
 addressInput.addEventListener("focus", function(){
   focusAll(addressInput, "adress-error")
+})
+passwordInput.addEventListener("focus", function(){
+  focusAll(passwordInput, "password-error")
+})
+repeatPasswordInput.addEventListener("focus", function(){
+  focusAll(repeatPasswordInput, "repeat-password-error")
+})
+submitInput.addEventListener("click", function(){
+  sumbitRegister();
 })
