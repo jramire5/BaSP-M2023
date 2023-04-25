@@ -16,81 +16,108 @@
     </head>
     <body>
         <header class="header">
-            <a href="#" class="logo">
+            <a href="../views/index.html" class="logo">
                 <img src="../../Assets/images/radiumrocketlogo.png" alt="Mega Rocket Logo" class="logo-img" id="logo-img">
                 <h1 class="sitename" id="sitename">MEGA ROCKET S.A</h1>
             </a>
             <div class="login-signup">
                 <div class="login-signup-button">
-                    <a href="" id="login">Log in
+                    <a href="../views/log-in.html" id="login">Log in
                         <img src="../../Assets/images/login-icon.png" alt="Log In">
                     </a>
                 </div>
                 <div>
                     <div class="login-signup-button">
-                        <a href="#">Sign Up
+                        <a href="../views/sign-up.html">Sign Up
                             <img src="../../Assets/images/signup-icon.png" alt="sign up icon">
                         </a>
-                    </div>
-                    <img src="../../Assets/images/sandwich-icon.png" alt="sandwich icon" class="sandwich-icon">
+                    </div>  
+                    <a href="../views/log-in.html">
+                        <img src="../../Assets/images/sandwich-icon.png" alt="sandwich icon" class="sandwich-icon">
+                    </a>
                 </div>
         </header>
         <main>
+            <h2 class="secondary-titles">Sign Up Form</h2>
             <div class="signup-container" id="signup-container">
                 <form  class="form" action="" id="signup-form">
-                    <div class="" id="signup-name">
+                    <div class="form-field" id="signup-name">
                         <label for="Name" class="label">Name</label>
-                        <input type="text" value="name" class="contact-input" id="name-input">
-                        <p id="name-error"></p>
+                        <input type="text" placeholder="Mirtha" class="contact-input" id="name-input">
+                        <p class="error" id="name-error"></p>
                     </div>
-                    <div id="signup-surname">
+                    <div class="form-field" id="signup-surname">
                         <label for="surname" class="label">Surname</label>
-                        <input type="text" class="contact-input" id="surname-input">
+                        <input type="text" placeholder="Legrand" class="contact-input" id="surname-input">
                         <p class="error" id="surname-error"></p>
                     </div>
-                    <div id="signup-ID">
+                    <div class="form-field"  id="signup-ID">
                         <label for="id" class="label">ID</label>
-                        <input type="text" class="contact-input" id="id-input">
-                        <p class="error"></p>
+                        <input type="text" placeholder="11111111" class="contact-input" id="id-input">
+                        <p class="error" id="id-error"></p>
                     </div>
-                    <div id="signup-birthdate">
+                    <div class="form-field"  id="signup-birthdate">
                         <label for="Date-of-birth" class="label">Date of Birth</label>
-                        <input type="text" class="contact-input" id="birthdate-input">
-                        <p class="error"></p>
+                        <input type="date" placeholder="1/1/1899" class="contact-input" id="birthdate-input">
+                        <p class="error" id="birthdate-error"></p>
                     </div>
-                    <div   id="signup-phone">
+                    <div class="form-field" id="signup-phone">
                         <label for="phone" class="label">Phone</label>
-                        <input type="text" class="contact-input" id="phone-input" name="phone">
-                        <p class="error"></p>
+                        <input type="text" placeholder="3411234567" class="contact-input" id="phone-input" name="phone">
+                        <p class="error" id="phone-error"></p>
                       </div>
-                    <div   id="signup-address">
+                    <div class="form-field" id="signup-address">
                         <label for="address" class="label">Address</label>
-                        <input type="text" class="contact-input" id="address-input" name="address" >
-                        <p class="error"></p>
+                        <input type="text" placeholder="calle 123" class="contact-input" id="address-input" name="address" >
+                        <p class="error" id="adress-error"></p>
                     </div>   
-                    <div   id="signup-city">
+                    <div class="form-field" id="signup-city">
                         <label for="city" class="label">City</label>
-                        <input type="text" class="contact-input" id="city-input" name="city">
-                        <p class="error"></p>
+                        <input type="text" placeholder="Villa Cañas" class="contact-input" id="city-input" name="city">
+                        <p class="error" id="city-error"></p>
                     </div>  
-                    <div   id="signup-zipcode">
+                    <div class="form-field" id="signup-zipcode">
                         <label for="zipcode" class="label">Zip Code</label>
-                        <input type="text" class="contact-input" id="zipcode-input" name="zipcode">
-                        <p class="error"></p>
+                        <input type="text" placeholder="123456" class="contact-input" id="zipcode-input" name="zipcode">
+                        <p class="error" id="zipcode-error"></p>
                     </div>
-                    <div   id="signup-email">
+                    <div class="form-field" id="signup-email">
                         <label for="Email" class="label">Email:</label>
-                        <input type="text" class="contact-input" id="email-input">
-                        <p id="email-error"></p>
+                        <input type="text" placeholder="lachiqui@yahoo.com" class="contact-input" id="email-input">
+                        <p class="error" id="email-error"></p>
                     </div>
-                    <div   id="signup-password">
+                    <div class="form-field" id="signup-password">
                         <label for="Email" class="label">Password:</label>
-                        <input type="password" class="contact-input" id="password-input">
-                        <p id="password-error"></p>
+                        <input type="password" placeholder="********" class="contact-input" id="password-input">
+                        <p class="error" id="password-error"></p>
+                    </div>
+                    <div class="form-field" id="signup-repeat-password">
+                        <label for="Email" class="label">Repeat Password:</label>
+                        <input type="password" placeholder="********" class="contact-input" id="repeat-password-input">
+                        <p class="error" id="repeat-password-error"></p>
                     </div>
                     <input class="input-submit" type="submit" value="Register" id="input-register">
                 </form>
             </div>
         </main>
+        <footer>
+            <div class="footer-content">
+                <img src="../../Assets/images/instagram-logo.png" alt="Instagram Logo" class="footer-img">
+                <a href="https://www.instagram.com/" class="footer-text">@RocketGym</a>
+                <img src="../../Assets/images/whatsapp-logo.png" alt="Whatsapp logo" class="footer-img">
+                <a href="tel:+1403654896" class="footer-text">+1 403 894 056</a>
+                <img src="../../Assets/images/facebook-logo.png" alt="facebook-logo" class="footer-img">
+                <a href="https://www.facebook.com/" class="footer-text">Rocket Gym</a>
+                <a href="https://goo.gl/maps/bmLpHthUbXpR3h2NA" class="footer-contact-containers">
+                    <img src="../../Assets/images/map-icon.png" alt="map icon" class="side-contact-items">
+                    <p class="footer-text">Av. Pellegrini 3245</p>
+                </a>
+                <a href="tel=+543416544948" class="footer-contact-containers">
+                    <img src="../../Assets/images/phone icon.png" alt="phone icon" class="side-contact-items">
+                    <p class="footer-text">3416548943</p>
+                </a>
+                <p class="text" id="copyright">Mega Rocket SA <span>All rights reserved 2023©</span></p>
+            </div>
+        </footer>
     </body>
 </html>

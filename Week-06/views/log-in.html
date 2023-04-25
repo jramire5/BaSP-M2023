@@ -11,46 +11,67 @@
         <link rel="stylesheet" href="../css/footer.css">
         <link rel="stylesheet" href="../css/log-in.css">
         <title>Log in</title>
-        <script src="../js/log-in.js"></script>
+        <script defer src="../js/log-in.js"></script>
     </head>
     <body>
         <header class="header">
-            <a href="#" class="logo">
+            <a href="../views/index.html" class="logo">
                 <img src="../../Assets/images/radiumrocketlogo.png" alt="Mega Rocket Logo" class="logo-img" id="logo-img">
                 <h1 class="sitename" id="sitename">MEGA ROCKET S.A</h1>
             </a>
             <div class="login-signup">
                 <div class="login-signup-button">
-                    <a href="" id="login">Log in
+                    <a href="../views/log-in.html" id="login">Log in
                         <img src="../../Assets/images/login-icon.png" alt="Log In">
                     </a>
                 </div>
                 <div>
                     <div class="login-signup-button">
-                        <a href="#">Sign Up
+                        <a href="../views/sign-up.html">Sign Up
                             <img src="../../Assets/images/signup-icon.png" alt="sign up icon">
                         </a>
                     </div>
-                    <img src="../../Assets/images/sandwich-icon.png" alt="sandwich icon" class="sandwich-icon">
+                    <a href="../views/sign-up.html">
+                        <img src="../../Assets/images/sandwich-icon.png" alt="sandwich icon" class="sandwich-icon">
+                    </a>
                 </div>
         </header>
         <main>
+            <h2 class="secondary-titles">Log In</h2>
             <div class="login-container" id="login-container">
                 <form action="" class="form" id="login-form">
                     <div class="form-field" id="login-email">
                         <label for="Email" class="label">Email:</label>
-                        <input type="text" value="message@mail.com" class="contact-input" id="email-input">
-                        <p id="email-error"></p>
+                        <input type="text" placeholder="message@mail.com" class="contact-input" id="email-input">
+                        <p class="error" id="email-error"></p>
                     </div>
                     <div class="form-field" id="login-password">
                         <label for="Email" class="label">Password:</label>
-                        <input type="password" value="********" class="contact-input" id="password-input">
-                        <p id="password-error"></p>
+                        <input type="password" placeholder="********" class="contact-input" id="password-input">
+                        <p class="error" id="password-error"></p>
                     </div>
                     <input class="input-submit" type="submit" value="Send" id="input-submit">
                 </form>
             </div>
         </main>
+        <footer>
+            <div class="footer-content">
+                <img src="../../Assets/images/instagram-logo.png" alt="Instagram Logo" class="footer-img">
+                <a href="https://www.instagram.com/" class="footer-text">@RocketGym</a>
+                <img src="../../Assets/images/whatsapp-logo.png" alt="Whatsapp logo" class="footer-img">
+                <a href="tel:+1403654896" class="footer-text">+1 403 894 056</a>
+                <img src="../../Assets/images/facebook-logo.png" alt="facebook-logo" class="footer-img">
+                <a href="https://www.facebook.com/" class="footer-text">Rocket Gym</a>
+                <a href="https://goo.gl/maps/bmLpHthUbXpR3h2NA" class="footer-contact-containers">
+                    <img src="../../Assets/images/map-icon.png" alt="map icon" class="side-contact-items">
+                    <p class="footer-text">Av. Pellegrini 3245</p>
+                </a>
+                <a href="tel=+543416544948" class="footer-contact-containers">
+                    <img src="../../Assets/images/phone icon.png" alt="phone icon" class="side-contact-items">
+                    <p class="footer-text">3416548943</p>
+                </a>
+                <p class="text" id="copyright">Mega Rocket SA <span>All rights reserved 2023©</span></p>
+            </div>
+        </footer>
     </body>
-    <script src="../js/log-in.js"></script>
 </html>

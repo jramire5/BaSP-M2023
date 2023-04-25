@@ -142,7 +142,7 @@
 }
 
 .form-field {
-    width: 80%;
+    width: 70%;
     padding: 0.1rem;
 }
 
@@ -318,14 +318,15 @@ input {
     #contact-form {
         padding: 3rem 2rem;
     }
-    .form-field {
-        width: 45%
-    }
     .box-message {
         width: 95%;
         display: block;
         align-self: center;
     }
+    .secondary-titles {
+        font-size: 3rem;
+    }
+    
     .activities-container {
         background-size: cover;
         width: 70%;
@@ -359,6 +360,10 @@ input {
     .secondary-sections {
         flex-direction: row;
     }
+    .secondary-titles {
+        font-size: 4rem;
+    }
+    
     .section-memberships {
         flex-direction: column;
     }
@@ -369,6 +374,9 @@ input {
     }
     .memberships {
         flex-direction: column;
+    }
+    .form-field {
+        width: 45%
     }
     .section-our-story {
         flex-direction: row;

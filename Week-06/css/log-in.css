@@ -2,16 +2,36 @@ body{
     background-image: url("../../Assets/images/dont-sit-get-fit-mobile.png");
     background-size: cover;
 }
-    main{
+main{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .login-container{
-    margin: 1rem;
+    margin: 5rem;
     padding: 1rem;
     align-self: center;
     justify-self: center;
     background-color: #E3EC39;
     border-radius: 1rem;
+}
+.error{
+    color: #ff0010;
+    height: 1rem;
+    max-width: 80%;
+}
+.form-field input{
+    background-color: aliceblue;
+    color: black;
+}
+.input-submit{
+    background-color: aliceblue;
+    color: black;
+}
+@media screen and (min-width: 601px) {
+    .input-submit{
+
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }

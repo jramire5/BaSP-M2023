@@ -13,29 +13,38 @@ Divided in groups, we did the design and prototype of the webpage. My group did 
 
 This week i did a model of the landing page using just HTML. 
 
+https://jramire5.github.io/BaSP-M2023/Week-02/index.html
+
 ## Week 03 (30/03)
 
 This week i did the styling of the landing page using CSS. Screen size: 1512px
+
+https://jramire5.github.io/BaSP-M2023/Week-03/index.html
 
 ## Week 04 (06/04)
 
 This week i made the site responsive using flexbox and media queries
 
+https://jramire5.github.io/BaSP-M2023/Week-04/index.html
+
 ## Week 05
 
 This week the challenge was to use Javascript to solve some excercises
 
+https://jramire5.github.io/BaSP-M2023/Week-05/index.html
+
+## Week 06
+
+This week i made the log in and sign up, and made the validations with JS
+
+https://jramire5.github.io/BaSP-M2023/Week-06/index.html
+
 ## How to use it
 
-Open the following links:
-
-For the Web page, updated up to week 4
-
-https://jramire5.github.io/BaSP-M2023/Week-04/index.html
+Open the links attached
 
 For the week 05 excercises:
 
-https://jramire5.github.io/BaSP-M2023/Week-05/index.html
 
 ## Author
 

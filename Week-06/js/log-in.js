@@ -4,23 +4,6 @@ var emailInput = document.getElementById("email-input");
 var passwordInput = document.getElementById("password-input");
 var submitInput = document.getElementById("input-submit");
 
-function blurEmail(){
-    var email = emailInput.value;
-    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-    if (!emailExpression.test(email)) {
-      emailInput.style.borderColor = "red";
-      document.getElementById("email-error").textContent = "Please enter a valid email address.";
-      return "Please enter a valid email address.";
-    }else{
-        emailInput.style.borderColor = "black";
-        document.getElementById("email-error").textContent = "";
-        return -1;
-    }
-}
-function focusEmail(){
-    emailInput.style.borderColor = "black";
-    document.getElementById("email-error").textContent = "";
-}
 function specialCharacterCheck(wordInput) {
     var specialCharacters = "/[!@#$%^&*()_+\-=\[\]{};':\\|,.<>\/?]+/";
     for (var i = 0; i < wordInput.length; i++) {
@@ -39,30 +22,56 @@ function numbersCheck(wordInput) {
     }
     return false;
 }
+function focusAll(name, id) {
+    name.style.borderColor = "black";
+    document.getElementById(id).innerText = "";
+  }
+  function requiredCheck(input, id){
+    value = input.value;
+    if (value.length == 0){
+        input.style.borderColor = "red";
+        document.getElementById(id).textContent = "*Required";
+        return  "required"
+    }
+    else{
+        return "OK";
+    }
+}
+function blurEmail(){
+    var email = emailInput.value;
+    if(requiredCheck(emailInput, "email-error") == "required"){
+        return requiredCheck(emailInput, "email-error");
+    }
+    var emailExpression = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+    if (!emailExpression.test(email)) {
+      emailInput.style.borderColor = "red";
+      document.getElementById("email-error").textContent = "Invalid Email Format";
+      return "Please enter a valid email address.";
+    }else{
+        return "OK";
+    }
+}
 function blurPassword(){
     var pass = passwordInput.value;
-    if (specialCharacterCheck(pass) == true) {
+    if (requiredCheck(passwordInput,"password-error") == "required") {
+        return requiredCheck(passwordInput,"password-error");
+    }
+    else if (specialCharacterCheck(pass) == true) {
       passwordInput.style.borderColor = "red";
       document.getElementById("password-error").textContent = "Invalid Password";
-      return "Invalid Password"
+      return "Please enter a valid password."
     }else{
         console.log("valid")
         passwordInput.style.borderColor = "black";
         document.getElementById("password-error").textContent = "";
-        return -1;
+        return "OK";
     }
 }
-function focusPassword(){
-    passwordInput.style.borderColor = "black";
-    document.getElementById("password-error").textContent = "";
-}
 function clickSubmit(){
-    if(blurPassword() != -1){
-        alert(blurPassword());
-    }else if(blurEmail() != -1){
-        alert(blurEmail());
+    if(blurPassword() != "" || blurEmail != ""){
+        alert("email: " + blurEmail() + "\npassword: "+ blurPassword());
     }else{
-        alert("Succesful log in")
+        alert("email: " + emailInput.value +"\nPassword: " + passwordInput.value())
     }
 }
 passwordInput.addEventListener("blur", blurPassword);

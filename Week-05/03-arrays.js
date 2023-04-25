@@ -13,15 +13,15 @@ monthsOrdered.sort();
 console.log(monthsOrdered);
 //3c
 //Agregar un elemento al principio y al final del array (utilizar unshift y push).
+console.log("3c.")
 months.unshift("Meses del Año:");
 months.push("Que te parece?");
-console.log("3c.")
 console.log(months)
-months.shift();
-months.pop();
 //3d
 //Quitar un elemento del principio y del final del array (utilizar shift y pop).
 console.log("3d.")
+months.shift();
+months.pop();
 console.log(months)
 //3e
 //Invertir el orden del array (utilizar reverse).
@@ -37,5 +37,5 @@ console.log("3f. \n" + mesesUnidos);
 //3g
 //Crear una copia del array de meses 
 //que contenga desde Mayo hasta Noviembre (utilizar slice).
-mayToNovember = months.slice(4,10);
+mayToNovember = months.slice(4,11);
 console.log(mayToNovember)

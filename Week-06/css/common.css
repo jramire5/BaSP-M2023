@@ -11,13 +11,13 @@ a {
 }
 
 * {
-    margin: 0;
     padding: 0;
     font-family: Roboto;
 }
 
 body {
-    align-content: center;
+    display: flex;
+    flex-direction: column;
     background-color: #535353;
     background-repeat: no-repeat;
 }
@@ -35,7 +35,6 @@ aside {
     min-height: fit-content;
     gap: 1rem;
 }
-
 .main-and-aside {
     display: flex;
     flex-direction: row;
