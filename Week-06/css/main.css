@@ -91,7 +91,6 @@
 
 .mini-card {
     position: relative;
-    display: flex;
     background-size: cover;
     background-clip: border-box;
     flex-wrap: wrap;
@@ -105,7 +104,7 @@
 }
 
 #reservations {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/reservations.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../Assets/images/reservations.png");
 }
 
 #schedule {
@@ -121,6 +120,7 @@
 }
 
 #contact-form {
+    width: ;
     background-color: white;
     border-radius: 20px;
     margin-left: 2rem;
@@ -262,13 +262,13 @@ input {
     border-radius: 10px;
 }
 #only-classes {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/only-classes.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/only-classes.png");
 }
 #classic {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/classic-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/classic-membership.png");
 }
 #black-membership {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../../Assets/images/black-membership.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("../../Assets/images/black-membership.png");
 }
 .section-our-story {
     display: flex;
@@ -309,14 +309,12 @@ input {
         margin-top: 1rem;
     }
     .form {
+        width: 85%;
         text-align: left;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         gap: 2rem;
-    }
-    #contact-form {
-        padding: 3rem 2rem;
     }
     .box-message {
         width: 95%;
@@ -360,10 +358,6 @@ input {
     .secondary-sections {
         flex-direction: row;
     }
-    .secondary-titles {
-        font-size: 4rem;
-    }
-    
     .section-memberships {
         flex-direction: column;
     }

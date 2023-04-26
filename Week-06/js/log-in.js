@@ -61,10 +61,8 @@ function blurEmail(){
 }
 function blurPassword(){
     var pass = passwordInput.value;
-    if(pass.length < 8){
-      passwordInput.style.borderColor = "red";
-      document.getElementById("password-error").textContent = "Insert at least 8 characters";
-      return "Please insert at least 8 characters."
+    if(requiredCheck(passwordInput, "password-error") == "required"){
+        return requiredCheck(passwordInput, "password-error");
     }
     else if(!(anyLetterCheck(pass) && numbersCheck(pass))){
       password.style.borderColor = "red";
