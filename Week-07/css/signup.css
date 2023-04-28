@@ -1,0 +1,36 @@
+main{
+    background-image: url("../../Assets/images/dont-sit-get-fit-mobile.png");
+    background-size: cover;
+}
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.error{
+    color: #ff0010;
+    height: 1rem;
+    max-width: 80%;
+}
+.input-submit{
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+@media screen and (min-width: 1025px) {
+.form{
+    flex-direction: row;
+}
+}
