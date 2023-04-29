@@ -1,5 +1,3 @@
-console.log(document.body);
-console.log(document.getElementById('login-email'));
 var emailInput = document.getElementById("email-input");
 var passwordInput = document.getElementById("password-input");
 var submitInput = document.getElementById("input-submit");
@@ -66,7 +64,7 @@ function blurPassword(){
     }
     else if(!(anyLetterCheck(pass) && numbersCheck(pass))){
       passwordInput.style.borderColor = "red";
-      document.getElementById(id).textContent = "Please use letters AND numbers";
+      document.getElementById("error-password").textContent = "Please use letters AND numbers";
       return "Please use letters and numbers."
     }else{
         return pass;
@@ -75,27 +73,32 @@ function blurPassword(){
 function fetchGet(url) {
     return fetch(url)
         .then(function (response) {
-            console.log(response.json());
-            return response;
+            return response.json();
         })
-        // .then(function (jsonData) {
-        //     console.log(jsonData)
-        //     return jsonData;
-        // })
+        .then(function (jsonData) {
+            if (typeof jsonData.msg != "undefined" && jsonData.success != true) {
+                console.log(jsonData);
+                throw new Error(jsonData.msg);
+            }else if(jsonData.success != true){
+                var errorGroup = ""
+                for (let i = 0; i < jsonData.errors.length; i++) {
+                    errorGroup = errorGroup + "\n " +  (jsonData.errors[i].msg)                    
+                }
+                throw new Error(errorGroup);
+            }else{
+                alert(jsonData.msg);
+            }
+            return jsonData;
+        })
         .catch(function (error) {
-            console.log(error);
+            alert(error)
         });
 }
 function clickSubmit(){
-    if(blurPassword() != "" || blurEmail != ""){
-        alert("email: " + blurEmail() + "\npassword: "+ blurPassword());
-    }else{
-        alert("email: " + emailInput.value +"\nPassword: " + passwordInput.value())
-        var url = ('https://api-rest-server.vercel.app/login?' + 'email='+emailInput.value+'&password='+ passwordInput.value);
-        console.log(url)
-        fetchGet(url);
-        return url;
-    }
+    var url = 'https://api-rest-server.vercel.app/login?' + 'email='+emailInput.value+'&password='+ passwordInput.value;
+    alert("email: " + emailInput.value +"\nPassword: " + passwordInput.value)
+    fetchGet(url);
+    return url;
 }
 passwordInput.addEventListener("blur", blurPassword);
 emailInput.addEventListener("blur", blurEmail);

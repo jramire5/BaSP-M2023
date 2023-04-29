@@ -133,7 +133,6 @@ function blurZipCode(numberInput , id) {
   }
 }
 function blurDate(birthdateInput, id){
-  console.log(birthdateInput.value);
   if (requiredCheck(birthdateInput,id) == "required"){
     return requiredCheck(birthdateInput,id)
   }else{
@@ -175,7 +174,7 @@ function blurAddress(){
   if(specialCharacterCheck(adressValue) == false){
     if (emptyPos <= 0 || emptyPos+1 == adressValue.length) {
       cityInput.style.borderColor = "red";
-      document.getElementById("adress-error").innerText = "Please "
+      document.getElementById("adress-error").innerText = "Please insert a valid adress format"
     }else{
       return adressValue;
     }
@@ -286,6 +285,7 @@ passwordInput.addEventListener("focus", function(){
 repeatPasswordInput.addEventListener("focus", function(){
   focusAll(repeatPasswordInput, "repeat-password-error")
 })
-submitInput.addEventListener("click", function(){
+submitInput.addEventListener("click", function(e){
+  e.preventDefault();
   sumbitRegister();
 })
