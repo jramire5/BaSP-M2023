@@ -39,12 +39,15 @@ This week i made the log in and sign up, and made the validations with JS
 
 https://jramire5.github.io/BaSP-M2023/Week-06/index.html
 
+## Week 07
+
+This week i made the back-end Validations
+
+https://jramire5.github.io/BaSP-M2023/Week-07/views/index.html
+
 ## How to use it
 
 Open the links attached
-
-For the week 05 excercises:
-
 
 ## Author
 
