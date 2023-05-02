@@ -81,13 +81,36 @@ main {
     /* left: 2.5rem; */
     color: #E3EC39
 }
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 20rem; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.1); /* Black w/ opacity */
+  }
+.modal-content {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 10px;
+  }
+
 
 @media only screen and (min-width: 601px) {
 
     .titles {
         font-size: 4rem;
     }
-
     .titles-effect {
         left: 6rem
     }

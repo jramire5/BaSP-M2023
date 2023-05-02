@@ -1,6 +1,7 @@
 var emailInput = document.getElementById("email-input");
 var passwordInput = document.getElementById("password-input");
 var submitInput = document.getElementById("input-submit");
+var modal = document.getElementById("modal");
 
 
 function specialCharacterCheck(wordInput) {
@@ -77,19 +78,21 @@ function fetchValidations(url) {
             return response.json();
         })
         .then(function (jsonData) {
-            if (typeof jsonData.errors === "undefined" && jsonData.success != true) {
+            if (!jsonData.errors && jsonData.success != true) {
                 console.log(jsonData);
                 throw new Error(jsonData.msg);
             }else if(jsonData.success != true){
                 var errorGroup = ""
                 for (let i = 0; i < jsonData.errors.length; i++) {
                     errorGroup = errorGroup + "\n " +  (jsonData.errors[i].msg);
+                    console.log('entro')
                 }
                 throw new Error(errorGroup);
             }else{
-                alert(jsonData.msg);
+                modalCreation(jsonData.msg)
+                return jsonData;
             }
-            return jsonData;
+            
         })
         .catch(function (error) {
             alert(error)
@@ -98,9 +101,19 @@ function fetchValidations(url) {
 
 function clickSubmit(){
     var url = 'https://api-rest-server.vercel.app/login?' + 'email='+emailInput.value+'&password='+ passwordInput.value;
-    alert("email: " + emailInput.value +"\nPassword: " + passwordInput.value)
     fetchValidations(url);
     return url;
+}
+
+function modalCreation(msg){
+    document.getElementById("modal").style.display = "block"
+    document.getElementById("modal-text").textContent = msg;
+    window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    
 }
 passwordInput.addEventListener("blur", blurPassword);
 emailInput.addEventListener("blur", blurEmail);

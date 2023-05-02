@@ -252,10 +252,7 @@ function fetchValidations(url) {
       return response.json();
     })
     .then(function (jsonData) {
-      if (typeof jsonData.msg != "undefined" && jsonData.success != true) {
-        console.log(jsonData);
-        throw new Error(jsonData.msg);
-      } else if (jsonData.success != true) {
+      if (jsonData.success != true) {
         var errorGroup = "";
         for (let i = 0; i < jsonData.errors.length; i++) {
           errorGroup = errorGroup + "\n " + jsonData.errors[i].msg;
@@ -295,8 +292,7 @@ function sumbitRegister() {
     "&password=" +
     passwordInput.value;
   fetchValidations(url);
-  alert();
-
+  //alert();
   // "name: " + blurName(nameInput, "name-error") +
   // "\nsurname: " + blurName(surnameInput, "surname-error") +
   // "\nID: " + blurID(idInput, "id-error") +
